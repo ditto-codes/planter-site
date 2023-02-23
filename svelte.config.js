@@ -2,14 +2,13 @@
 import adapter from '@sveltejs/adapter-auto';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
-import { resolve } from 'path';
 
 const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'$styles': resolve("./src/styles/"),
-			'$components': resolve("./src/components/"),
+			'$styles': 'src/styles/',
+			'$components': 'src/components/',
 		}
 	},
 	preprocess: [

@@ -13,7 +13,7 @@
   export let href = false;
   export let disabled = false;
   export let pressed = false;
-  export let { class: className } = '';
+  export let className = '';
   
   let classes = `${variant} ${size}`;
   if (className) classes += ` ${className}`;
