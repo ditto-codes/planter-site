@@ -1,0 +1,148 @@
+/*
+
+  COLORS
+
+  Tokens that define the color system and theme.
+
+  Contents:
+    - Colors
+    - Tints & Shades (Variants)
+    - Theme
+  
+*/
+
+// COLORS
+// ────────────────────────────────────
+
+$blue: #515ff0;
+$purple: #8953f0;
+$magenta: #f053f0;
+$red: #f05151;
+$orange: #f0a853;
+$yellow: #f0d853;
+$green: #5a965e;
+$cyan: #1de0f2;
+$canvas: #f5f5f5;
+
+// Grays (mixed with $shade-dark for variants)
+$dark-gray: #232731;
+$gray: #585858;
+
+// Note: also used for $shade and $tint by default
+$black: #15171d;
+$white: #fff !default;
+
+// TINTS & SHADES (Variants)
+// ────────────────────────────────────
+// Generate extended color palette from the base colors
+
+// 1. mix with base colors for tints
+// 2. mix with base colors for shades
+// 3. shade mix-color for darker bases, e.g. grays
+
+$tint:        $white     !default; // 1
+$shade:       $dark-gray !default; // 2
+$shade-dark:  $black     !default; // 3
+
+$blue-100: mix($blue, $tint, 25%)  !default;
+$blue-200: mix($blue, $tint, 50%)  !default;
+$blue-300: mix($blue, $tint, 75%)  !default;
+$blue-400: $blue                   !default;
+$blue-500: mix($blue, $shade, 75%) !default;
+$blue-600: mix($blue, $shade, 50%) !default;
+$blue-700: mix($blue, $shade, 25%) !default;
+
+$purple-100: mix($purple, $tint, 25%)  !default;
+$purple-200: mix($purple, $tint, 50%)  !default;
+$purple-300: mix($purple, $tint, 75%)  !default;
+$purple-400: $purple                   !default;
+$purple-500: mix($purple, $shade, 75%) !default;
+$purple-600: mix($purple, $shade, 50%) !default;
+$purple-700: mix($purple, $shade, 25%) !default;
+
+$magenta-100: mix($magenta, $tint, 25%)  !default;
+$magenta-200: mix($magenta, $tint, 50%)  !default;
+$magenta-300: mix($magenta, $tint, 75%)  !default;
+$magenta-400: $magenta                   !default;
+$magenta-500: mix($magenta, $shade, 75%) !default;
+$magenta-600: mix($magenta, $shade, 50%) !default;
+$magenta-700: mix($magenta, $shade, 25%) !default;
+
+$red-100: mix($red, $tint, 25%)  !default;
+$red-200: mix($red, $tint, 50%)  !default;
+$red-300: mix($red, $tint, 75%)  !default;
+$red-400: $red                   !default;
+$red-500: mix($red, $shade, 75%) !default;
+$red-600: mix($red, $shade, 50%) !default;
+$red-700: mix($red, $shade, 25%) !default;
+
+$orange-100: mix($orange, $tint, 25%)  !default;
+$orange-200: mix($orange, $tint, 50%)  !default;
+$orange-300: mix($orange, $tint, 75%)  !default;
+$orange-400: $orange                   !default;
+$orange-500: mix($orange, $shade, 75%) !default;
+$orange-600: mix($orange, $shade, 50%) !default;
+$orange-700: mix($orange, $shade, 25%) !default;
+
+$yellow-100: mix($yellow, $tint, 25%)  !default;
+$yellow-200: mix($yellow, $tint, 50%)  !default;
+$yellow-300: mix($yellow, $tint, 75%)  !default;
+$yellow-400: $yellow                   !default;
+$yellow-500: mix($yellow, $shade, 75%) !default;
+$yellow-600: mix($yellow, $shade, 50%) !default;
+$yellow-700: mix($yellow, $shade, 25%) !default;
+
+$green-100: mix($green, $tint, 25%)  !default;
+$green-200: mix($green, $tint, 50%)  !default;
+$green-300: mix($green, $tint, 75%)  !default;
+$green-400: $green                   !default;
+$green-500: mix($green, $shade, 75%) !default;
+$green-600: mix($green, $shade, 50%) !default;
+$green-700: mix($green, $shade, 25%) !default;
+
+$cyan-100: mix($cyan, $tint, 25%)  !default;
+$cyan-200: mix($cyan, $tint, 50%)  !default;
+$cyan-300: mix($cyan, $tint, 75%)  !default;
+$cyan-400: $cyan                   !default;
+$cyan-500: mix($cyan, $shade, 75%) !default;
+$cyan-600: mix($cyan, $shade, 50%) !default;
+$cyan-700: mix($cyan, $shade, 25%) !default;
+
+$gray-100: mix($gray, $tint, 25%)       !default;
+$gray-200: mix($gray, $tint, 50%)       !default;
+$gray-300: mix($gray, $tint, 75%)       !default;
+$gray-400: $gray                        !default;
+$gray-500: mix($gray, $shade-dark, 75%) !default;
+$gray-600: mix($gray, $shade-dark, 50%) !default;
+$gray-700: mix($gray, $shade-dark, 25%) !default;
+
+$dark-gray-100: mix($shade, $tint, 25%)       !default;
+$dark-gray-200: mix($shade, $tint, 50%)       !default;
+$dark-gray-300: mix($shade, $tint, 75%)       !default;
+$dark-gray-400: $dark-gray                    !default;
+$dark-gray-500: mix($shade, $shade-dark, 75%) !default;
+$dark-gray-600: mix($shade, $shade-dark, 50%) !default;
+$dark-gray-700: mix($shade, $shade-dark, 25%) !default;
+
+// THEME
+// ────────────────────────────────────
+
+$primary:       $blue !default;
+$secondary:     $gray !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-600 !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;

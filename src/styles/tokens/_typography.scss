@@ -1,0 +1,101 @@
+/*
+  
+  TYPOGRAPHY
+  
+  Tokens for typographic elements.
+
+  Contents:
+    - Font Stacks
+    - Font Size
+    - Font Weight
+    - Body
+    - Line Height
+    - Headings
+    - Lead Paragraphs
+    - Links
+    - Small
+    - Highlight
+
+*/
+
+// BASE 
+// ────────────────────────────────────
+// Used to initialize the root font styles
+
+// FONT STACKS
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+// FONT SIZE
+$font-size-root:              null !default; // Doesn't set a value unless you override it
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+// FONT WEIGHT
+$font-weight-base:            null !default;
+
+// BODY
+$body-font-color:             $black !default;
+$body-text-align:             left !default;
+$body-letter-spacing:         null !default;
+
+// LINE HEIGHT
+$line-height-base:            1.2 !default;
+$line-height-sm:              1 !default;
+$line-height-lg:              1.6 !default;
+
+// HEADINGS
+// ────────────────────────────────────
+// Note: values set to `null` will inherit from root styles applied to body
+
+$heading-font-family:         $font-family-sans-serif !default;
+$heading-font-weight:         700 !default;
+$heading-font-style:          null !default;
+$heading-line-height:         $line-height-base !default;
+$heading-color:               null !default;
+$heading-text-transform:      null !default;
+$heading-margin-bottom:       $spacer-2 !default;
+$heading-letter-spacing:      null !default;
+
+$h1-font-size:                3rem !default;
+$h2-font-size:                2.5rem !default;
+$h3-font-size:                2rem !default;
+$h4-font-size:                1.75rem !default;
+$h5-font-size:                1.5rem !default;
+$h6-font-size:                1rem !default;
+
+// LEAD PARAGRAPHS
+// ────────────────────────────────────
+
+$lead-font-size:              1.5rem !default;
+$lead-font-weight:            200;
+
+// LINKS
+// ────────────────────────────────────
+// Text links
+
+$link-color:                    $blue !default;
+$link-font-weight:              null !default;
+$link-decoration:               underline !default;
+$link-hover-color:              $blue-700 !default;
+$link-hover-background-color:   $cyan-100 !default;
+$link-hover-decoration:         null !default;
+$link-letter-spacing:           null !default;
+
+// SMALL
+// ────────────────────────────────────
+
+$small-font-size:               0.8125rem !default;
+$small-font-weight:             600 !default;
+$small-font-style:              null !default;
+$small-text-transform:          uppercase !default;
+$small-letter-spacing:          null !default;
+
+// HIGHLIGHT
+// ────────────────────────────────────
+// Selected text, aka highlighted text
+
+$highlight-bg:                null !default;
+$highlight-fg:                null !default;

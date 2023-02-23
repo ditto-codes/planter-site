@@ -1,0 +1,29 @@
+/* 
+
+  GRID
+
+  Tokens for the flexbox grid (row, col, container)
+
+*/
+
+// Enable grid class generation in your output
+// (e.g. .container, .row, .col classes)
+$enable-grid-classes: false;
+
+// Rows and Cols
+$grid-columns:                12 !default;
+$grid-row-columns:            6 !default;
+
+// Gutter
+$grid-gutter-width:           1.5rem !default;
+$gutters: $spacer-size-map !default;
+
+// Containers
+$container-padding-x: 1rem !default;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
