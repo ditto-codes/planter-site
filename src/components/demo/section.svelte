@@ -36,7 +36,7 @@
     margin-bottom: sp(xxl);
     
     :global(code) {
-      color: $red-400;
+      color: $kelp-400;
     }
   }
 

@@ -14,23 +14,26 @@
 // COLORS
 // ────────────────────────────────────
 
-$blue: #515ff0;
-$purple: #8953f0;
-$magenta: #f053f0;
-$red: #f05151;
-$orange: #f0a853;
-$yellow: #f0d853;
-$green: #5a965e;
-$cyan: #1de0f2;
-$canvas: #f5f5f5;
+// Planter Brand
+$paper:       #FFFDF5;
+$burlap:      #F1EBD4;
+$kelp-light:  #197554;
+$kelp:        #406455;
+$kelp-dark:   #263535;
 
-// Grays (mixed with $shade-dark for variants)
-$dark-gray: #232731;
-$gray: #585858;
+// Auxiliary
+$coral:       #F06A4C;
+$blueberry:   #6F7DFF;
+$aloe-light:  #EBFADB;
+$aloe:        #90CC53;
+$aloe-dark:   #518E14;
 
-// Note: also used for $shade and $tint by default
-$black: #15171d;
-$white: #fff !default;
+// Monochromatic
+$white:       #FFFFFF !default;
+$light-gray:  #C5C5C5;
+$gray:        #717171;
+$dark-gray:   #494949;
+$black:       #000000;
 
 // TINTS & SHADES (Variants)
 // ────────────────────────────────────
@@ -44,69 +47,93 @@ $tint:        $white     !default; // 1
 $shade:       $dark-gray !default; // 2
 $shade-dark:  $black     !default; // 3
 
-$blue-100: mix($blue, $tint, 25%)  !default;
-$blue-200: mix($blue, $tint, 50%)  !default;
-$blue-300: mix($blue, $tint, 75%)  !default;
-$blue-400: $blue                   !default;
-$blue-500: mix($blue, $shade, 75%) !default;
-$blue-600: mix($blue, $shade, 50%) !default;
-$blue-700: mix($blue, $shade, 25%) !default;
+$paper-100: mix($paper, $tint, 50%)  !default;
+$paper-200: mix($paper, $tint, 75%)  !default;
+$paper-300: mix($paper, $tint, 95%)  !default;
+$paper-400: $paper                   !default;
+$paper-500: mix($paper, $shade, 95%) !default;
+$paper-600: mix($paper, $shade, 85%) !default;
+$paper-700: mix($paper, $shade, 70%) !default;
 
-$purple-100: mix($purple, $tint, 25%)  !default;
-$purple-200: mix($purple, $tint, 50%)  !default;
-$purple-300: mix($purple, $tint, 75%)  !default;
-$purple-400: $purple                   !default;
-$purple-500: mix($purple, $shade, 75%) !default;
-$purple-600: mix($purple, $shade, 50%) !default;
-$purple-700: mix($purple, $shade, 25%) !default;
+$burlap-100: mix($burlap, $tint, 25%)  !default;
+$burlap-200: mix($burlap, $tint, 50%)  !default;
+$burlap-300: mix($burlap, $tint, 75%)  !default;
+$burlap-400: $burlap                   !default;
+$burlap-500: mix($burlap, $shade, 75%) !default;
+$burlap-600: mix($burlap, $shade, 50%) !default;
+$burlap-700: mix($burlap, $shade, 25%) !default;
 
-$magenta-100: mix($magenta, $tint, 25%)  !default;
-$magenta-200: mix($magenta, $tint, 50%)  !default;
-$magenta-300: mix($magenta, $tint, 75%)  !default;
-$magenta-400: $magenta                   !default;
-$magenta-500: mix($magenta, $shade, 75%) !default;
-$magenta-600: mix($magenta, $shade, 50%) !default;
-$magenta-700: mix($magenta, $shade, 25%) !default;
+$kelp-light-100: mix($kelp-light, $tint, 25%)  !default;
+$kelp-light-200: mix($kelp-light, $tint, 50%)  !default;
+$kelp-light-300: mix($kelp-light, $tint, 75%)  !default;
+$kelp-light-400: $kelp-light                   !default;
+$kelp-light-500: mix($kelp-light, $shade, 75%) !default;
+$kelp-light-600: mix($kelp-light, $shade, 50%) !default;
+$kelp-light-700: mix($kelp-light, $shade, 25%) !default;
 
-$red-100: mix($red, $tint, 25%)  !default;
-$red-200: mix($red, $tint, 50%)  !default;
-$red-300: mix($red, $tint, 75%)  !default;
-$red-400: $red                   !default;
-$red-500: mix($red, $shade, 75%) !default;
-$red-600: mix($red, $shade, 50%) !default;
-$red-700: mix($red, $shade, 25%) !default;
+$kelp-100: mix($kelp, $tint, 25%)  !default;
+$kelp-200: mix($kelp, $tint, 50%)  !default;
+$kelp-300: mix($kelp, $tint, 75%)  !default;
+$kelp-400: $kelp                   !default;
+$kelp-500: mix($kelp, $shade, 75%) !default;
+$kelp-600: mix($kelp, $shade, 50%) !default;
+$kelp-700: mix($kelp, $shade, 25%) !default;
 
-$orange-100: mix($orange, $tint, 25%)  !default;
-$orange-200: mix($orange, $tint, 50%)  !default;
-$orange-300: mix($orange, $tint, 75%)  !default;
-$orange-400: $orange                   !default;
-$orange-500: mix($orange, $shade, 75%) !default;
-$orange-600: mix($orange, $shade, 50%) !default;
-$orange-700: mix($orange, $shade, 25%) !default;
+$kelp-dark-100: mix($kelp-dark, $tint, 25%)  !default;
+$kelp-dark-200: mix($kelp-dark, $tint, 50%)  !default;
+$kelp-dark-300: mix($kelp-dark, $tint, 75%)  !default;
+$kelp-dark-400: $kelp-dark                   !default;
+$kelp-dark-500: mix($kelp-dark, $shade, 75%) !default;
+$kelp-dark-600: mix($kelp-dark, $shade, 50%) !default;
+$kelp-dark-700: mix($kelp-dark, $shade, 25%) !default;
 
-$yellow-100: mix($yellow, $tint, 25%)  !default;
-$yellow-200: mix($yellow, $tint, 50%)  !default;
-$yellow-300: mix($yellow, $tint, 75%)  !default;
-$yellow-400: $yellow                   !default;
-$yellow-500: mix($yellow, $shade, 75%) !default;
-$yellow-600: mix($yellow, $shade, 50%) !default;
-$yellow-700: mix($yellow, $shade, 25%) !default;
+$coral-100: mix($coral, $tint, 15%)  !default;
+$coral-200: mix($coral, $tint, 40%)  !default;
+$coral-300: mix($coral, $tint, 70%)  !default;
+$coral-400: $coral                   !default;
+$coral-500: mix($coral, $shade, 85%) !default;
+$coral-600: mix($coral, $shade, 72.5%) !default;
+$coral-700: mix($coral, $shade, 60%) !default;
 
-$green-100: mix($green, $tint, 25%)  !default;
-$green-200: mix($green, $tint, 50%)  !default;
-$green-300: mix($green, $tint, 75%)  !default;
-$green-400: $green                   !default;
-$green-500: mix($green, $shade, 75%) !default;
-$green-600: mix($green, $shade, 50%) !default;
-$green-700: mix($green, $shade, 25%) !default;
+$blueberry-100: mix($blueberry, $tint, 25%)  !default;
+$blueberry-200: mix($blueberry, $tint, 50%)  !default;
+$blueberry-300: mix($blueberry, $tint, 75%)  !default;
+$blueberry-400: $blueberry                   !default;
+$blueberry-500: mix($blueberry, $shade, 75%) !default;
+$blueberry-600: mix($blueberry, $shade, 50%) !default;
+$blueberry-700: mix($blueberry, $shade, 25%) !default;
 
-$cyan-100: mix($cyan, $tint, 25%)  !default;
-$cyan-200: mix($cyan, $tint, 50%)  !default;
-$cyan-300: mix($cyan, $tint, 75%)  !default;
-$cyan-400: $cyan                   !default;
-$cyan-500: mix($cyan, $shade, 75%) !default;
-$cyan-600: mix($cyan, $shade, 50%) !default;
-$cyan-700: mix($cyan, $shade, 25%) !default;
+$aloe-light-100: mix($aloe-light, $tint, 25%)  !default;
+$aloe-light-200: mix($aloe-light, $tint, 50%)  !default;
+$aloe-light-300: mix($aloe-light, $tint, 75%)  !default;
+$aloe-light-400: $aloe-light                   !default;
+$aloe-light-500: mix($aloe-light, $shade, 75%) !default;
+$aloe-light-600: mix($aloe-light, $shade, 50%) !default;
+$aloe-light-700: mix($aloe-light, $shade, 25%) !default;
+
+$aloe-100: mix($aloe, $tint, 25%)  !default;
+$aloe-200: mix($aloe, $tint, 50%)  !default;
+$aloe-300: mix($aloe, $tint, 75%)  !default;
+$aloe-400: $aloe                   !default;
+$aloe-500: mix($aloe, $shade, 75%) !default;
+$aloe-600: mix($aloe, $shade, 50%) !default;
+$aloe-700: mix($aloe, $shade, 25%) !default;
+
+$aloe-dark-100: mix($aloe-dark, $tint, 25%)  !default;
+$aloe-dark-200: mix($aloe-dark, $tint, 50%)  !default;
+$aloe-dark-300: mix($aloe-dark, $tint, 75%)  !default;
+$aloe-dark-400: $aloe-dark                   !default;
+$aloe-dark-500: mix($aloe-dark, $shade, 75%) !default;
+$aloe-dark-600: mix($aloe-dark, $shade, 50%) !default;
+$aloe-dark-700: mix($aloe-dark, $shade, 25%) !default;
+
+$light-gray-100: mix($light-gray, $tint, 25%)  !default;
+$light-gray-200: mix($light-gray, $tint, 50%)  !default;
+$light-gray-300: mix($light-gray, $tint, 75%)  !default;
+$light-gray-400: $light-gray                   !default;
+$light-gray-500: mix($light-gray, $shade, 75%) !default;
+$light-gray-600: mix($light-gray, $shade, 50%) !default;
+$light-gray-700: mix($light-gray, $shade, 25%) !default;
 
 $gray-100: mix($gray, $tint, 25%)       !default;
 $gray-200: mix($gray, $tint, 50%)       !default;
@@ -123,26 +150,3 @@ $dark-gray-400: $dark-gray                    !default;
 $dark-gray-500: mix($shade, $shade-dark, 75%) !default;
 $dark-gray-600: mix($shade, $shade-dark, 50%) !default;
 $dark-gray-700: mix($shade, $shade-dark, 25%) !default;
-
-// THEME
-// ────────────────────────────────────
-
-$primary:       $blue !default;
-$secondary:     $gray !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-200 !default;
-$dark:          $gray-600 !default;
-
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-) !default;

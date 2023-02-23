@@ -85,7 +85,7 @@
   }  
 
   a {
-    $focus-outline: 2px solid $purple;
+    $focus-outline: 2px solid $burlap;
     $border: $border-width solid transparent;
     &:focus-visible {
       // border: $border;

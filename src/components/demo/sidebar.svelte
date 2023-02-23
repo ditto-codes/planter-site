@@ -58,7 +58,7 @@
 ────────────────────────────────── -->
 <style lang="scss">
   nav {
-    background-color: $canvas;
+    background-color: $paper;
     border-bottom: 1px solid $gray-100;
     padding: 0 sp(lg);
     width: 200px;
@@ -93,17 +93,17 @@
     color: $gray;
     
     &.selected {
-      color: $blue; 
-      background-color: rgba($blue-100, .5);
+      color: $paper; 
+      background-color: rgba($paper-100, .5);
       &:hover,
       &:focus-visible {
-        background-color: rgba($blue-100, .5);
+        background-color: rgba($paper-100, .5);
       }
     }
 
     @mixin hover-state {
-      color: $blue;
-      background-color: rgba($blue-100, .25);
+      color: $paper;
+      background-color: rgba($paper-100, .25);
     }
 
     &:hover {
@@ -113,7 +113,7 @@
     &:focus-visible {
       @include hover-state;
       // Focus ring
-      $focus-outline: 2px solid $purple;
+      $focus-outline: 2px solid $burlap;
       outline-offset: 2px;
       outline: $focus-outline;
     }

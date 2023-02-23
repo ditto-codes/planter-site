@@ -8,7 +8,7 @@
     <div class="color-items">
       <div class="color-item">
         <div class="color-block color-blue">
-          <h3 class="color-title">$blue-400</h3>
+          <h3 class="color-title">$paper-400</h3>
           <p class="color-hex color-blue">#515ff0</p>
         </div>
           <div class="color-variants color-blue">
@@ -24,7 +24,7 @@
 
       <div class="color-item">
         <div class="color-block color-purple">
-          <h3 class="color-title">$purple-400</h3>
+          <h3 class="color-title">$burlap-400</h3>
           <p class="color-hex color-purple">#8953f0</p>
         </div>
         <div class="color-variants color-purple">
@@ -40,7 +40,7 @@
 
       <div class="color-item">
         <div class="color-block color-magenta">
-          <h3 class="color-title">$magenta-400</h3>
+          <h3 class="color-title">$kelp-light-400</h3>
           <p class="color-hex color-magenta">#f053f0</p>
         </div>
         <div class="color-variants color-magenta">
@@ -56,7 +56,7 @@
 
       <div class="color-item">
         <div class="color-block color-red">
-          <h3 class="color-title">$red-400</h3>
+          <h3 class="color-title">$kelp-400</h3>
           <p class="color-hex color-red">#f05151</p>
         </div>
         <div class="color-variants color-red">
@@ -72,7 +72,7 @@
 
       <div class="color-item">
         <div class="color-block color-orange">
-          <h3 class="color-title">$orange-400</h3>
+          <h3 class="color-title">$kelp-dark-400</h3>
           <p class="color-hex color-orange">#f0a853</p>
         </div>
         <div class="color-variants color-orange">
@@ -88,7 +88,7 @@
 
       <div class="color-item">
         <div class="color-block color-yellow">
-          <h3 class="color-title">$yellow-400</h3>
+          <h3 class="color-title">$coral-400</h3>
           <p class="color-hex color-yellow">#f0d853</p>
         </div>
         <div class="color-variants color-yellow">
@@ -104,7 +104,7 @@
 
       <div class="color-item">
         <div class="color-block color-green">
-          <h3 class="color-title">$green-400</h3>
+          <h3 class="color-title">$blueberry-400</h3>
           <p class="color-hex color-green">#5a965e</p>
         </div>
         <div class="color-variants color-green">
@@ -120,7 +120,7 @@
 
       <div class="color-item">
         <div class="color-block color-cyan">
-          <h3 class="color-title">$cyan-400</h3>
+          <h3 class="color-title">$aloe-light-400</h3>
           <p class="color-hex color-cyan">#1de0f2</p>
         </div>
         <div class="color-variants color-cyan">
@@ -186,7 +186,7 @@
           <div class="color-col">
             <div class="color-canvas color-block">
               <h3 class="color-title">
-                $canvas
+                $paper
               </h3>
               <p class="color-hex">#F5F5F5</p>
             </div>
@@ -284,41 +284,41 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $blue-400;
+      background-color: $paper-400;
     }
 
     &.color-hex {
-      color: $blue-100;
+      color: $paper-100;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $blue-100; 
+      background-color: $paper-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $blue-200; 
+      background-color: $paper-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $blue-300;  
+      background-color: $paper-300;  
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $blue-400;  
+      background-color: $paper-400;  
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $blue-500;  
+      background-color: $paper-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $blue-600;  
+      background-color: $paper-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $blue-700;  
+      background-color: $paper-700;  
     }
   }
 
@@ -326,41 +326,41 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $purple-400;
+      background-color: $burlap-400;
     }
 
     &.color-hex {
-      color: $purple-100;
+      color: $burlap-100;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $purple-100; 
+      background-color: $burlap-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $purple-200; 
+      background-color: $burlap-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $purple-300;  
+      background-color: $burlap-300;  
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $purple-400;  
+      background-color: $burlap-400;  
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $purple-500;  
+      background-color: $burlap-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $purple-600;  
+      background-color: $burlap-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $purple-700;  
+      background-color: $burlap-700;  
     }
   }
 
@@ -368,41 +368,41 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $magenta-400;
+      background-color: $kelp-light-400;
     }
 
     &.color-hex {
-      color: $magenta-100;
+      color: $kelp-light-100;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $magenta-100; 
+      background-color: $kelp-light-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $magenta-200; 
+      background-color: $kelp-light-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $magenta-300;  
+      background-color: $kelp-light-300;  
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $magenta-400;  
+      background-color: $kelp-light-400;  
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $magenta-500;  
+      background-color: $kelp-light-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $magenta-600;  
+      background-color: $kelp-light-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $magenta-700;  
+      background-color: $kelp-light-700;  
     }
   }
 
@@ -410,41 +410,41 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $red-400;
+      background-color: $kelp-400;
     }
 
     &.color-hex {
-      color: $red-100;
+      color: $kelp-100;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $red-100; 
+      background-color: $kelp-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $red-200; 
+      background-color: $kelp-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $red-300;  
+      background-color: $kelp-300;  
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $red-400;  
+      background-color: $kelp-400;  
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $red-500;  
+      background-color: $kelp-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $red-600;  
+      background-color: $kelp-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $red-700;  
+      background-color: $kelp-700;  
     }
   }
 
@@ -452,41 +452,41 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $orange-400;
+      background-color: $kelp-dark-400;
     }
 
     &.color-hex {
-      color: $orange-100;
+      color: $kelp-dark-100;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $orange-100; 
+      background-color: $kelp-dark-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $orange-200; 
+      background-color: $kelp-dark-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $orange-300;  
+      background-color: $kelp-dark-300;  
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $orange-400;  
+      background-color: $kelp-dark-400;  
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $orange-500;  
+      background-color: $kelp-dark-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $orange-600;  
+      background-color: $kelp-dark-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $orange-700;  
+      background-color: $kelp-dark-700;  
     }
   }
 
@@ -494,44 +494,44 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $yellow-400;
+      background-color: $coral-400;
       color: $black;
     }
 
     &.color-hex {
-      color: $yellow-700;
+      color: $coral-700;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $yellow-100; 
+      background-color: $coral-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $yellow-200; 
+      background-color: $coral-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $yellow-300;  
+      background-color: $coral-300;  
       color: $black;
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $yellow-400;  
+      background-color: $coral-400;  
       color: $black;
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $yellow-500;  
+      background-color: $coral-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $yellow-600;  
+      background-color: $coral-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $yellow-700;  
+      background-color: $coral-700;  
     }
   }
 
@@ -539,44 +539,44 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $cyan-400;
+      background-color: $aloe-light-400;
       color: $black;
     }
 
     &.color-hex {
-      color: $cyan-700;
+      color: $aloe-light-700;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $cyan-100; 
+      background-color: $aloe-light-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $cyan-200; 
+      background-color: $aloe-light-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $cyan-300;  
+      background-color: $aloe-light-300;  
       color: $black;
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $cyan-400;  
+      background-color: $aloe-light-400;  
       color: $black;
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $cyan-500;  
+      background-color: $aloe-light-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $cyan-600;  
+      background-color: $aloe-light-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $cyan-700;  
+      background-color: $aloe-light-700;  
     }
   }
 
@@ -584,41 +584,41 @@
 
     &.color-block {
       padding: sp(1.5);
-      background-color: $green-400;
+      background-color: $blueberry-400;
     }
 
     &.color-hex {
-      color: $green-100;
+      color: $blueberry-100;
     }
 
     .color-variant:nth-of-type(1) { 
-      background-color: $green-100; 
+      background-color: $blueberry-100; 
       color: $black;
     }
 
     .color-variant:nth-of-type(2) { 
-      background-color: $green-200; 
+      background-color: $blueberry-200; 
       color: $black;
     }
 
     .color-variant:nth-of-type(3) {
-      background-color: $green-300;  
+      background-color: $blueberry-300;  
     }
 
     .color-variant:nth-of-type(4) {
-      background-color: $green-400;  
+      background-color: $blueberry-400;  
     }
 
     .color-variant:nth-of-type(5) {
-      background-color: $green-500;  
+      background-color: $blueberry-500;  
     }
 
     .color-variant:nth-of-type(6) {
-      background-color: $green-600;  
+      background-color: $blueberry-600;  
     }
 
     .color-variant:nth-of-type(7) {
-      background-color: $green-700;  
+      background-color: $blueberry-700;  
     }
   }
 
@@ -748,7 +748,7 @@
 
   .color-canvas {
     padding: sp(1.5);
-    background-color: $canvas;
+    background-color: $paper;
     color: $black;
     .color-hex {
       color: $gray-300;

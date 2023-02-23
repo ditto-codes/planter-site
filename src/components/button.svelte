@@ -74,12 +74,12 @@
 button, 
 a {
   // Theme
-  $color: $canvas;
-  $bg-color: $blue;
+  $color: $paper;
+  $bg-color: $paper;
   $border: $border-width solid transparent;
-  $hover-bg-color: $blue-500;
-  $active-bg-color: $blue-600;
-  $focus-outline: 2px solid $purple;
+  $hover-bg-color: $paper-500;
+  $active-bg-color: $paper-600;
+  $focus-outline: 2px solid $burlap;
   $disabled-bg-color: $gray-100;
 
   color: $color;
@@ -130,7 +130,7 @@ a {
 
   &:hover,
   &:focus-visible {
-    color: $blue-500;
+    color: $paper-500;
   }
 }
 
@@ -152,15 +152,15 @@ a {
 
 .ghost {
   // Theme
-  $color: $blue;
+  $color: $paper;
   $bg-color: transparent;
-  $border: 1px solid $blue;
-  $hover-color: $blue-500;
-  $hover-border: 1px solid $blue-500;
-  $hover-bg-color: $blue-100;
-  $active-bg-color: $blue-200;
+  $border: 1px solid $paper;
+  $hover-color: $paper-500;
+  $hover-border: 1px solid $paper-500;
+  $hover-bg-color: $paper-100;
+  $active-bg-color: $paper-200;
   $disabled-color: $gray-100;
-  $focus-border: 1px solid $blue;
+  $focus-border: 1px solid $paper;
   $disabled-border: 1px solid $gray-100;
 
   border: $border;
@@ -199,12 +199,12 @@ a {
 
 .text {
   // Theme
-  $color: $blue;
-  $hover-bg-color: $blue-100;
-  $active-bg-color: $blue-200;
-  $hover-color: $blue-500;
+  $color: $paper;
+  $hover-bg-color: $paper-100;
+  $active-bg-color: $paper-200;
+  $hover-color: $paper-500;
   $focus-border: 1px solid transparent;
-  $focus-outline: 2px solid $purple;
+  $focus-outline: 2px solid $burlap;
   $disabled-color: $gray-100;
   
   background-color: transparent;

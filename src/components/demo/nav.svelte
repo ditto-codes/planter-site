@@ -34,7 +34,7 @@
 ────────────────────────────────── -->
 <style lang="scss">
   nav {
-    background-color: $canvas;
+    background-color: $paper;
     border-bottom: 1px solid $gray-100;
     padding: sp(md);
     display: flex;
@@ -62,14 +62,14 @@
 
     &:hover, 
     &:focus-visible {
-      color: $blue;
+      color: $paper;
       background-color: transparent;
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: sp(xs);
     }
 
-    $focus-outline: 2px solid $purple;
+    $focus-outline: 2px solid $burlap;
     $border: $border-width solid transparent;
     &:focus-visible {
       border-radius: $border-radius;

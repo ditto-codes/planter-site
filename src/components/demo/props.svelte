@@ -84,19 +84,19 @@
   }
 
   .name {
-    color: $blue-400;
+    color: $paper-400;
   }
 
   .string,
   .string.default {
-    color: $green-300;
+    color: $blueberry-300;
   }
 
   .boolean {
-    color: $magenta-300;
+    color: $kelp-light-300;
   }
   .boolean.default {
-    color: $red-400;
+    color: $kelp-400;
   }
 
   .object,
