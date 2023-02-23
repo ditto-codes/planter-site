@@ -18,18 +18,26 @@
 
 */
 
+// FONTS
+// ────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@400;500;700&family=Lora:wght@500;700&display=swap');
+$font-chivo: 'Chivo';
+$font-lora: 'Lora';
+$font-ibm-plex-mono: 'IBM Plex Mono';
+
 // BASE 
 // ────────────────────────────────────
 // Used to initialize the root font styles
 
 // FONT STACKS
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      $font-chivo, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:           $font-lora, Georgia, serif, !default;
+$font-family-monospace:       $font-ibm-plex-mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 
 // FONT SIZE
-$font-size-root:              null !default; // Doesn't set a value unless you override it
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-root:              10px !default; // Doesn't set a value unless you override it
+$font-size-base:              1.6rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
@@ -42,8 +50,8 @@ $body-text-align:             left !default;
 $body-letter-spacing:         null !default;
 
 // LINE HEIGHT
-$line-height-base:            1.2 !default;
-$line-height-sm:              1 !default;
+$line-height-base:            1.4 !default;
+$line-height-sm:              1.2 !default;
 $line-height-lg:              1.6 !default;
 
 // HEADINGS
@@ -59,18 +67,17 @@ $heading-text-transform:      null !default;
 $heading-margin-bottom:       $spacer-2 !default;
 $heading-letter-spacing:      null !default;
 
-$h1-font-size:                3rem !default;
-$h2-font-size:                2.5rem !default;
-$h3-font-size:                2rem !default;
-$h4-font-size:                1.75rem !default;
-$h5-font-size:                1.5rem !default;
-$h6-font-size:                1rem !default;
+$h1-font-size:                3.2rem !default;
+$h2-font-size:                2.4rem !default;
+$h3-font-size:                2.2rem !default;
+$h4-font-size:                2rem !default;
+$h5-font-size:                1.8rem !default;
+$h6-font-size:                1.6rem !default;
 
-// LEAD PARAGRAPHS
-// ────────────────────────────────────
-
-$lead-font-size:              1.5rem !default;
-$lead-font-weight:            200;
+$display-font-family:         $font-family-serif;
+$display-font-size:           7.2rem;
+$display-font-weight:         700;
+$display-color:               $black;
 
 // LINKS
 // ────────────────────────────────────
@@ -87,11 +94,21 @@ $link-letter-spacing:           null !default;
 // SMALL
 // ────────────────────────────────────
 
-$small-font-size:               0.8125rem !default;
+$small-font-size:               1.4rem !default;
 $small-font-weight:             600 !default;
 $small-font-style:              null !default;
 $small-text-transform:          uppercase !default;
 $small-letter-spacing:          null !default;
+
+
+// CODE
+// ────────────────────────────────────
+
+$code-font-size:               1.3rem !default;
+$code-font-weight:             500 !default;
+$code-letter-spacing:          null !default;
+$code-color:                   $paper;
+$code-background-color:        $kelp-400;
 
 // HIGHLIGHT
 // ────────────────────────────────────

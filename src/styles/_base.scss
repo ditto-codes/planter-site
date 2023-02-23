@@ -49,9 +49,11 @@ body {
   color: $body-font-color;
   text-align: $body-text-align;
   letter-spacing: $body-letter-spacing;
-  background-color: $white; // 1
+  background-color: $paper; // 1
   -webkit-text-size-adjust: 100%; // 2
   -webkit-tap-highlight-color: rgba($black, 0); // 3
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 
   &::selection {
     background: $highlight-bg;
@@ -110,13 +112,16 @@ h6 {
 .h5 { @extend h5; }
 .h6 { @extend h6; }
 
-p {
-  margin-top: 0;
+.display {
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  font-size: $display-font-size;
+  color: $display-color;
+  letter-spacing: -.04em;
 }
 
-.lead {
-  font-size: $lead-font-size;
-  font-weight: $lead-font-weight;
+p {
+  margin-top: 0;
 }
 
 small, 
@@ -134,6 +139,14 @@ strong {
 
 code {
   font-family: $font-family-monospace;
+  font-size: $code-font-size;
+  color: $code-color;
+  font-weight: $code-font-weight;
+  letter-spacing: $code-letter-spacing;
+  background-color: $code-background-color;
+  padding: sp(.2 .5);
+  border-radius: $border-radius-sm;
+  vertical-align: text-bottom;
 }
 
 // LINKS
@@ -167,7 +180,6 @@ a:not(.unstyled) {
 }
 
 a:not([href]):not([class]) {
-
   &,
   &:hover {
     color: inherit;
