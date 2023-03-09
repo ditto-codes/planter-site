@@ -70,10 +70,10 @@ body {
   font-style: $heading-font-style;
   line-height: $heading-line-height;
   text-transform: $heading-text-transform;
+  letter-spacing: $heading-letter-spacing;
   color: $heading-color;
   margin-bottom: $heading-margin-bottom;
   margin-top: 0;
-  letter-spacing: $heading-letter-spacing;
 }
 
 h1 {
@@ -117,7 +117,7 @@ h6 {
   font-weight: $display-font-weight;
   font-size: $display-font-size;
   color: $display-color;
-  letter-spacing: -.04em;
+  letter-spacing: $display-letter-spacing;
 }
 
 p {
