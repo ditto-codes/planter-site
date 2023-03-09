@@ -6,9 +6,9 @@
   <img src="/planter-logo.png" alt="">
   <h1>Planter Svelte</h1>
   <p>Welcome to Planter Svelte!</p>
-  <Button href="/demo/button">Demo</Button>
+  <Button href="/docs">Docs</Button>
   <span class="spacer"></span>
-  <Button variant="ghost" href="https://planter.dev">Docs</Button>
+  <Button href="/demo/typography">Demo</Button>
 </div>
 
 <style lang="scss">

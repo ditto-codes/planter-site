@@ -2,6 +2,7 @@
 import adapter from '@sveltejs/adapter-auto';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
+import { mdsvex } from 'mdsvex';
 
 const config = {
 	kit: {
@@ -12,6 +13,7 @@ const config = {
 		}
 	},
 	preprocess: [
+		mdsvex({ extensions: ['.md', '.svx'] }),
 		sveltePreprocess({
 			scss: {
 				includePaths: ['./src/styles', './node_modules'],

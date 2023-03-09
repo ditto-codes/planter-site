@@ -83,7 +83,7 @@ a {
   $disabled-bg-color: $gray-100;
 
   color: $color;
-  background-color: $bg-color;
+  background-color: black;
   border: $border;
   border-radius: $border-radius;
   padding: 10px 26px;
