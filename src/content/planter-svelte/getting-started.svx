@@ -1,0 +1,56 @@
+<script>
+
+</script>
+
+# planter-svelte
+
+A Svelte web project starter made by creators of [Planter](https://planter.dev) 🌱
+
+<!-- TODO: update this link -->
+Read the full documentation on [planter.dev](https://planter.dev/planter-svelte)
+
+## Contents
+- [Getting Started](#getting-started)
+- [Styling with Sass](#styling-with-sass)
+- [Config](#config)
+
+---
+
+# Getting Started
+
+Planter Svelte is a web project starter that uses [SvelteKit](https://kit.svelte.dev/) and comes with starter styles built out with [Sass](https://sass-lang.com/) as well as a few simple components to serve as both examples and for use in your project.
+
+
+Get started by running these two commands to install dependencies and startup the local dev server:
+```shell
+npm install
+npm run dev
+```
+
+<!-- callout -->
+Make sure to set up your editor for Svelte language support. We recommend the [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) extension, but there's also [support for other editors](https://sveltesociety.dev/tools/#editor-support) (Submlime, Vim, WebStorm).
+
+
+## Project Structure
+There are two basic concepts of SvelteKit:
+- Each page of your app is a Svelte component
+- You create pages by adding files to the src/routes directory of your project.
+
+### `/src`
+The home for all your project code.
+
+### `/static`
+Static assets, such as images or external scripts.
+
+### `/src/routes`
+Create pages by adding files to the `src/routes` directory of your project. Read more about [routing](https://kit.svelte.dev/docs/routing) in SvelteKit. 
+Note: at the root of `src/routes`, there's a file named `__layout.svelte`; Planter Svelte uses this file to apply global styles to all pages. Read more about [layouts](https://kit.svelte.dev/docs/layouts) in SvelteKit.
+
+### `/src/components`
+A place to house your components. This directory includes a few simple components to get you started.
+
+### `/src/styles`
+Global stylesheets, Sass variables, mixins, and functions. 
+
+### `/src/routes/demo` & `/src/components/demo`
+The `src/routes/demo` page showcases how SvelteKit can work, while also documenting the components and default styles we've included. All demo content is contained within `src/routes/demo` and `src/components/demo` and can be freely deleted.

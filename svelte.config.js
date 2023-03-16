@@ -5,11 +5,12 @@ import autoprefixer from 'autoprefixer';
 import { mdsvex } from 'mdsvex';
 
 const config = {
+	extensions: ['.svelte', '.svx'],
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'$styles': 'src/styles/',
-			'$components': 'src/components/',
+			'$styles': './src/styles/',
+			'$components': './src/components/',
 		}
 	},
 	preprocess: [

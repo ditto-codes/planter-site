@@ -9,7 +9,7 @@
     <img src="/planter-logo.png" alt="Planter logo" />
   </div>
   <ul>
-    <li><a href="/docs">Docs</a></li>
+    <li><a href="/docs/getting-started">Docs</a></li>
     <li><a href="/garden">The Garden</a></li>
     <li><a href="https://github.com/ditto-codes/planter">GitHub</a></li>
   </ul>
