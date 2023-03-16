@@ -5,7 +5,12 @@
 
 <Nav />
 <div class="layout">
-  <slot />
+  <div class="header">
+    <slot name="header" />
+  </div>
+  <div class="content">
+    <slot/>
+  </div>
 </div>
 
 <style lang="scss">
