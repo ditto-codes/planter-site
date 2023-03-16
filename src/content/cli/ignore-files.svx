@@ -1,0 +1,5 @@
+## Ignore Files
+
+When using local repos Planter will respect ignore files. Planter supports `.gitignore` and/or `.planterignore`. `.planterignore` works the same way as a `.gitignore` file does with git. If both files exist, Planter will default to the `.planterignore`. 
+
+This means you could tell Planter to ignore unique files in `.planterignore`, while git still utilizes the `.gitignore` file. Alternatively, if you want to ignore the same set of files for both, you can just keep a `.gitignore`.

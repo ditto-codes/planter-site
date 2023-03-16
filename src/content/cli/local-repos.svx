@@ -1,0 +1,19 @@
+## Local Repos
+
+Local repos enable folks to quickly use Planter without needing a remote repo or even a git repository at all. This flexibility enables planter to be used for unpublished code such as a frequently used code sandbox or work in progress.
+
+When planted, a local repo will respect ignore files.
+
+**Example**
+
+```
+my-project/
+├─ src/
+│   ├─ script.js
+│   ├─ style.css
+│   └─ index.html
+└─ .planterignore
+```
+
+> **Note**<br>
+> It doesn’t have to be a repo — it can just be a folder!
