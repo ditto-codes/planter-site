@@ -2,6 +2,7 @@ export async function load({ params }){
   const page = await import(`../../../content/cli/${params.slug}.svx`);
   const content = page.default;
   const { metadata } = page;
+  console.log(content);
 
   return {
     topic: 'Planter CLI',
