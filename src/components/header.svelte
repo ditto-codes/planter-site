@@ -19,11 +19,12 @@
 </header>
 
 <style lang="scss">
-  .header {
-
+  header {
+    
+    // height: sp(13);
   }
   .title {
-
+    margin: 0;
   }
   .meta {
     display: flex;
@@ -31,7 +32,10 @@
     align-items: center;
   }
   .topic {
-
+    font-weight: 700;
+    color: $kelp;
+    margin-bottom: sp(1);
+    font-size: 1.8rem;
   }
   .github {
 

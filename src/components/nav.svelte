@@ -26,6 +26,7 @@
     padding: sp(0 3);
     background-color: $paper;
     border-bottom: 1px solid $kelp;
+    z-index: 100;
   }
   img {
     display: block;

@@ -4,14 +4,13 @@
   import Header from '$components/header.svelte'
   import Sidebar from '$components/sidebar.svelte'
   import { page } from '$app/stores';
-  const { title, topic, repo, } = $page.data;
+  const { title, topic, repo, sidebar } = $page.data;
 </script>
 
 <Nav />
 <div class="layout">
   <div class="sidebar">
-    <!-- <Sidebar links={sidebar} /> -->
-    sidebar
+    <Sidebar links={sidebar} />
   </div>
   <div class="page">
     <div class="header">
@@ -25,19 +24,29 @@
 
 <style lang="scss">
   $navHeight: sp(7.5);
+  $sidebarWidth: 250px;
   .layout {
     padding-top: $navHeight;
   }
   .sidebar {
     position: fixed;
     top: sp(7.5);
-    width: 300px;
+    width: $sidebarWidth;
     height: calc(100vh - #{$navHeight});
     border-right: 1px solid $kelp;
     padding: sp(3.5);
   }
   .page {
-    margin-left: 300px;
+    margin-left: $sidebarWidth;
+  }
+  .header {
+    padding: sp(2.5) sp(3.5);
+    border-bottom: 1px solid $kelp;
+    position: sticky;
+    top: $navHeight;
+    width: 100%;
+    background-color: $paper;
+    z-index: 1;
   }
   .content {
     padding: sp(3.5);

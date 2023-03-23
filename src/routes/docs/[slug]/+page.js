@@ -1,5 +1,3 @@
-import { error } from '@sveltejs/kit';
- 
 export async function load({ params }){
   const page = await import(`../../../content/cli/${params.slug}.svx`);
   const content = page.default;
@@ -14,7 +12,26 @@ export async function load({ params }){
     title: metadata.title,
     content,
     sidebar: [
-      { title: 'bleh', link: 'slug' }
+      { 
+        title: 'Getting Started', 
+        url: '/docs/getting-started' 
+      },
+      { 
+        title: 'Commands', 
+        url: '/docs/commands' 
+      },
+      { 
+        title: 'Local Repos', 
+        url: '/docs/local-repos' 
+      },
+      { 
+        title: 'Ignore Files', 
+        url: '/docs/ignore-files' 
+      },
+      { 
+        title: 'About', 
+        url: '/docs/about' 
+      },
     ]
   }
 }
