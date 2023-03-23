@@ -13,5 +13,8 @@ export async function load({ params }){
     },
     title: metadata.title,
     content,
+    sidebar: [
+      { title: 'bleh', link: 'slug' }
+    ]
   }
 }

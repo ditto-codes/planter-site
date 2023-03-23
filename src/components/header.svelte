@@ -3,8 +3,10 @@
   export let topic;
   export let title;
   export let repo;
-</script>
 
+  // {title} is defined in .svx file
+  // {repo} and {topic} are defined in the respective page.js files
+</script>
 
 <header>
   <div class="meta">
