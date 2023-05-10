@@ -4,9 +4,6 @@
   let url = $page.url.pathname;
 </script>
 
-
-
-
 <ul>
   {#each links as link}
     <li>

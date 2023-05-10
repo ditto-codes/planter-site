@@ -9,10 +9,7 @@
 </script>
 
 <Nav />
-<div>
-  <slot />
-</div>
-<!-- <div class="layout">
+<div class="layout">
   <div class="sidebar">
     <Sidebar links={sidebar} />
   </div>
@@ -24,7 +21,7 @@
       <slot/>
     </div>
   </div>
-</div> -->
+</div>
 
 <style lang="scss">
   $navHeight: sp(7.5);

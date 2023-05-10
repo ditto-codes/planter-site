@@ -5,9 +5,9 @@
 
 
 <nav>
-  <div class="logo">
+  <a class="logo" href="/" alt="Home">
     <img src="/planter-logo.png" alt="Planter logo" />
-  </div>
+  </a>
   <ul>
     <li><a href="/docs/getting-started">Docs</a></li>
     <li><a href="/garden">The Garden</a></li>
