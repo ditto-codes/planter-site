@@ -6,7 +6,7 @@ title: 'Getting Started'
 
 Planter is a CLI created to help you maintain and use project starters quickly and easily. Stop wasting time setting up projects and start new ones with planters!
 
-**What is a Planter?**
+## What is a Planter?
 
 A planter is a repo that you have added to your list that you can then use `create` to quickly start a new project from with no git history. You can also use `create` with a remote repo directly without referencing an existing planter. 
 
