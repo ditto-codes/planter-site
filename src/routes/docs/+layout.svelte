@@ -7,7 +7,6 @@
   $: ({ title, topic, repo, sidebar } = $page.data);
 </script>
 
-<Nav />
 <div class="sidebar">
   <Sidebar links={sidebar} />
 </div>

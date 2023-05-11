@@ -1,7 +1,8 @@
 <script>
   export let links = [];
   import { page } from '$app/stores';
-  let url = $page.url.pathname;
+  let url;
+  $: url = $page.url.pathname;
 </script>
 
 <ul>
