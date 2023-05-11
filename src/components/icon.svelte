@@ -10,7 +10,7 @@
   import * as feather from 'feather-icons';
   
   export let name;
-  export let size;
+  export let size = 24;
 
   let settings = {
     ...$$restProps

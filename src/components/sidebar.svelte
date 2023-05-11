@@ -9,7 +9,7 @@
   {#each links as link}
     <li>
       <a 
-        class={url === link.url ? 'current' : ''} 
+        class={url === link.url ? 'current' : ''}
         href="{link.url}"
       >
         {link.title}
@@ -28,14 +28,19 @@
     padding: 0;
   }
   li {
-    margin-bottom: sp(1);
+    // margin-bottom: sp(1);
   }
   a {
     color: $gray;
     text-decoration: none;
     display: block;
+    padding: sp(.875);
+    transition: $animate-faster ease-out;
     &:hover {
-      // TODO: cool ghost-y hover state later
+      border-radius: 7px;
+      &.current {
+        color: $black;
+      }
     }
   }
 </style>
