@@ -19,10 +19,6 @@
 </header>
 
 <style lang="scss">
-  header {
-    
-    // height: sp(13);
-  }
   .title {
     margin: 0;
   }

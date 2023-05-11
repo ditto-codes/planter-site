@@ -8,26 +8,19 @@
 </script>
 
 <Nav />
-<div class="layout">
-  <div class="sidebar">
-    <Sidebar links={sidebar} />
+<div class="sidebar">
+  <Sidebar links={sidebar} />
+</div>
+<div class="page">
+  <div class="header">
+    <Header slot="header" {title} {topic} {repo} />
   </div>
-  <div class="page">
-    <div class="header">
-      <Header slot="header" {title} {topic} {repo} />
-    </div>
-    <div class="content">
-      <slot/>
-    </div>
+  <div class="content">
+    <slot/>
   </div>
 </div>
 
 <style lang="scss">
-  $navHeight: sp(7.5);
-  $sidebarWidth: 250px;
-  .layout {
-    padding-top: $navHeight;
-  }
   .sidebar {
     position: fixed;
     top: sp(7.5);
