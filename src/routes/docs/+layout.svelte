@@ -4,8 +4,7 @@
   import Header from '$components/header.svelte'
   import Sidebar from '$components/sidebar.svelte'
   import { page } from '$app/stores';
-  // TODO: wrap this in a reactive statement? content doesn't change
-  const { title, topic, repo, sidebar } = $page.data;
+  $: ({ title, topic, repo, sidebar } = $page.data);
 </script>
 
 <Nav />
