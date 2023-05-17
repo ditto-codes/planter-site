@@ -14,7 +14,10 @@ const config = {
 		}
 	},
 	preprocess: [
-		mdsvex({ extensions: ['.md', '.svx'] }),
+		mdsvex({ 
+			layout: './src/components/mdsvex/layout.svelte',
+			extensions: ['.md', '.svx'],
+		}),
 		sveltePreprocess({
 			scss: {
 				includePaths: ['./src/styles', './node_modules'],

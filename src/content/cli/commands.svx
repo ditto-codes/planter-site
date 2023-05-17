@@ -33,7 +33,7 @@ Directory of the new project.
 
 **Options**
 
-`-f`, `--flag`
+`-f`, `--force`
 
 Force the created directory to overwrite an existing one.
 
