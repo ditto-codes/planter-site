@@ -9,7 +9,7 @@ export async function load({ params }){
       name: 'planter',
       url: 'https://github.com/ditto-codes/planter',
     },
-    title: metadata.title,
+    title: metadata?.title ,
     content,
     sidebar: [
       { 

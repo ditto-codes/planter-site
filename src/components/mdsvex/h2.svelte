@@ -12,6 +12,7 @@
 
 <style lang="scss">
   h2 {
+    margin-top: 3.5rem;
     margin-bottom: .5rem;
   }
 </style>

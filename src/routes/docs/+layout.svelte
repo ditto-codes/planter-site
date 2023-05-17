@@ -41,6 +41,6 @@
     z-index: 1;
   }
   .content {
-    padding: sp(3.5);
+    padding: sp(0 3.5 3.5);
   }
 </style>

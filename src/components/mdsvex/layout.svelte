@@ -6,4 +6,7 @@
   import h3 from './h3.svelte';
   export { hr, ul, li, h2, h3 };
 </script>
+<script>
+  export let title;
+</script>
 <slot />

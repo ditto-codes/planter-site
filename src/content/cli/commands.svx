@@ -11,9 +11,7 @@ title: 'Commands'
 - [info](#info)
 - [pin](#pin)
 
----
-
-### create
+## create
 
 `planter [source] [dir] [options]`
 
@@ -59,9 +57,7 @@ planter create git@github.com:user/repo
 planter create https://github.com/user/repo
 ```
 
----
-
-### add
+## add
 
 `planter add <name> <location> [options]`
 

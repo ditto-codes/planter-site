@@ -1,3 +1,7 @@
+---
+title: 'Local Repos'
+---
+
 ## Local Repos
 
 Local repos enable folks to quickly use Planter without needing a remote repo or even a git repository at all. This flexibility enables planter to be used for unpublished code such as a frequently used code sandbox or work in progress.

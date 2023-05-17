@@ -9,7 +9,6 @@
 
   function linkify(node) {
     let text = node.firstChild.innerText;
-    console.log('node.firstChild.innerText', text);
     let id = text
       .replace(/[\s\_\&\:\;\,\+]+/g, '-')
       .toLowerCase();
