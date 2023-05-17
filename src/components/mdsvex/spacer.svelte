@@ -1,6 +1,9 @@
 <div />
 <style lang="scss">
   div {
-    margin-top: 3.5rem;
+    margin-top: $content-spacer;
+    @include mobile {
+      margin-top: $content-spacer-mobile;
+    }
   }
 </style>

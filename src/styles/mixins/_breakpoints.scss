@@ -153,3 +153,34 @@
     @content;
   }
 }
+
+// Custom Shorthands
+@mixin mobile($direction: down) {
+  @include bp(md, $direction) {
+    @content;
+  }
+}
+@mixin tablet($direction: down) {
+  @include bp(xl, $direction) {
+    @content;
+  }
+}
+// Only desktop 
+// (includes small desktops and large tablets
+@mixin desktop($size: xl, $direction: up) {
+  @include bp($size, $direction) {
+    @content;
+  }
+}
+// full sized desktop screens
+@mixin desktopFull($direction: up) {
+  @include bp(full, $direction) {
+    @content;
+  }
+}
+// big desktop screens
+@mixin desktopBig($direction: up) {
+  @include bp(big, $direction) {
+    @content;
+  }
+}

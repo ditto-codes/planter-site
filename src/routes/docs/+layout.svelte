@@ -20,27 +20,34 @@
 </div>
 
 <style lang="scss">
+  
   .sidebar {
     position: fixed;
     top: sp(7.5);
     width: $sidebarWidth;
     height: calc(100vh - #{$navHeight});
     border-right: 1px solid $kelp;
-    padding: sp(3.5);
+    padding: $content-spacer;
   }
   .page {
     margin-left: $sidebarWidth;
   }
   .header {
-    padding: sp(2.5) sp(3.5);
+    padding: sp(2.5) $content-spacer;
     border-bottom: 1px solid $kelp;
     position: sticky;
     top: $navHeight;
     width: 100%;
     background-color: $paper;
     z-index: 1;
+    @include mobile {
+      padding: sp(2) $content-spacer-mobile;
+    }
   }
   .content {
-    padding: sp(0 3.5 3.5);
+    padding: sp(0) $content-spacer $content-spacer;
+    @include mobile {
+      padding: sp(0) $content-spacer-mobile $content-spacer-mobile;
+    }
   }
 </style>
