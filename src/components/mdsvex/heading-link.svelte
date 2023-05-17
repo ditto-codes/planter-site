@@ -26,14 +26,14 @@
 </a>
 
 <style lang="scss">
-  a :global(h1),
-  a :global(h2),
-  a :global(h3),
-  a :global(h4),
-  a :global(h5),
-  a :global(h6) {
-    margin-bottom: 0;
-  }
+  // a :global(h1),
+  // a :global(h2),
+  // a :global(h3),
+  // a :global(h4),
+  // a :global(h5),
+  // a :global(h6) {
+  //   margin-bottom: 0;
+  // }
   a {
     position: relative;
     display: block;
@@ -49,8 +49,10 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: sp(-1.5);
+    margin-left: sp(-2);
+    padding: sp(1.5 .5);
     color: $coral;
     transition: $animate-faster;
+    user-select: none;
   }
 </style>
