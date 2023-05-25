@@ -1,0 +1,23 @@
+/*
+  
+  SHIKI HIGHLIGHTING
+  
+  CSS Variables to theme Shiki
+
+  https://github.com/shikijs/shiki/blob/main/docs/themes.md#theming-with-css-variables
+  
+*/
+
+:root {
+  --shiki-color-text: #{$black};
+  --shiki-color-background: #{$burlap};
+  --shiki-token-constant: #{#660000};
+  --shiki-token-string: #{#770000};
+  --shiki-token-comment: #{#880000};
+  --shiki-token-keyword: #{#990000};
+  --shiki-token-parameter: #{#AA0000};
+  --shiki-token-function: #{#BB0000};
+  --shiki-token-string-expression: #{#CC0000};
+  --shiki-token-punctuation: #{#DD0000};
+  --shiki-token-link: #{#EE0000};
+}

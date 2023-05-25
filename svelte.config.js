@@ -3,15 +3,15 @@ import adapter from '@sveltejs/adapter-auto';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 import { mdsvex } from 'mdsvex';
-
 import { getHighlighter } from 'shiki';
-const shikiHighlighter = await getHighlighter({
-	theme: 'nord',
-	langs: ['shell', 'js', 'html', 'svelte']
+
+const shiki = await getHighlighter({
+	theme: 'css-variables',
+	langs: ['shell', 'js', 'html', 'svelte', 'css', 'scss']
 });
+
 function highlighter(code, lang) {
-	console.log(lang)
-	return `<pre><code>` + shikiHighlighter.codeToHtml(code, { lang }) + `</code></pre>`;
+	return `<pre><code>${shiki.codeToHtml(code, { lang })}</code></pre>`;
 }
 
 const config = {
