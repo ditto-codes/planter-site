@@ -144,7 +144,7 @@ code {
   font-weight: $code-font-weight;
   letter-spacing: $code-letter-spacing;
   background-color: $code-background-color;
-  padding: sp(.2 .5);
+  padding: sp(.2 .5 .3);
   border-radius: $border-radius-sm;
   vertical-align: text-bottom;
 }
