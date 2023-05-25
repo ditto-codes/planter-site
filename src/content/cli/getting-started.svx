@@ -18,13 +18,13 @@ Check out this documentation and more at [planter.dev](https://www.planter.dev/)
 
 ### Install
 
-```bash
+```shell
 npm i -g @planter/cli
 ```
 
 ### Adding your own planter
 
-```bash
+```shell
 planter add my-planter user/repo
 Planter my-planter added.
 
@@ -35,6 +35,6 @@ Used my-planter at my-project
 
 ### Using a remote repo
 
-```bash
+```shell
 planter create user/repo my-project
 ```

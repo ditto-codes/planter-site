@@ -37,7 +37,7 @@ Force the created directory to overwrite an existing one.
 
 **Examples**
 
-```bash
+```shell
 # create is the default command in planter
 planter
 
@@ -85,7 +85,7 @@ Read more about Local repos.
 
 **Examples**
 
-```bash
+```shell
 # Add a planter using a remote repo
 planter add my-planter user/repo
 planter add my-planter github:user/repo
@@ -110,7 +110,7 @@ Sorts list of planters alphanumerically (ignores pinned). By default planters ar
 
 **Examples**
 
-```bash
+```shell
 # Usage
 planter list
 
@@ -162,7 +162,7 @@ Set the location type to local. (See `add` for more information.)
 
 **Examples**
 
-```bash
+```shell
 # Use options to edit your planter
 planter edit old-name -n new-name
 planter edit old-name -n new-name -l user/new-repo
@@ -185,7 +185,7 @@ Name of the planter to show info for.
 
 **Examples**
 
-```bash
+```shell
 # Usage
 planter info my-planter
 
@@ -223,7 +223,7 @@ Removes position from the planter.
 
 **Examples**
 
-```bash
+```shell
 # Pin to top
 planter pin my-planter
 
@@ -233,7 +233,7 @@ planter pin my-planter 5
 
 If the position is greater than the number of planters is passed, the highest possible number will be used instead.
 
-```bash
+```shell
 # Pin to the bottom-most position (assuming there are only 5 planters)
 planter pin my-planter 100
 

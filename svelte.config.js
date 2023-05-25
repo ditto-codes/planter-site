@@ -4,6 +4,16 @@ import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 import { mdsvex } from 'mdsvex';
 
+import { getHighlighter } from 'shiki';
+const shikiHighlighter = await getHighlighter({
+	theme: 'nord',
+	langs: ['shell', 'js', 'html', 'svelte']
+});
+function highlighter(code, lang) {
+	console.log(lang)
+	return `<pre><code>` + shikiHighlighter.codeToHtml(code, { lang }) + `</code></pre>`;
+}
+
 const config = {
 	extensions: ['.svelte', '.svx'],
 	kit: {
@@ -17,6 +27,9 @@ const config = {
 		mdsvex({ 
 			layout: './src/components/mdsvex/layout.svelte',
 			extensions: ['.md', '.svx'],
+			highlight: {
+				highlighter
+			}
 		}),
 		sveltePreprocess({
 			scss: {
