@@ -22,6 +22,8 @@ $kelp:        #406455;
 $kelp-dark:   #263535;
 
 // Auxiliary
+$brown:       #774831;
+$red:         #f81b03;
 $coral:       #F06A4C;
 $blueberry:   #6F7DFF;
 $aloe-light:  #EBFADB;
@@ -94,6 +96,22 @@ $coral-400: $coral                   !default;
 $coral-500: mix($coral, $shade, 85%) !default;
 $coral-600: mix($coral, $shade, 72.5%) !default;
 $coral-700: mix($coral, $shade, 60%) !default;
+
+$brown-100: mix($brown, $tint, 15%)  !default;
+$brown-200: mix($brown, $tint, 40%)  !default;
+$brown-300: mix($brown, $tint, 70%)  !default;
+$brown-400: $brown                     !default;
+$brown-500: mix($brown, $shade, 85%) !default;
+$brown-600: mix($brown, $shade, 72.5%) !default;
+$brown-700: mix($brown, $shade, 60%) !default;
+
+$red-100: mix($red, $tint, 15%)  !default;
+$red-200: mix($red, $tint, 40%)  !default;
+$red-300: mix($red, $tint, 70%)  !default;
+$red-400: $red                     !default;
+$red-500: mix($red, $shade, 85%) !default;
+$red-600: mix($red, $shade, 72.5%) !default;
+$red-700: mix($red, $shade, 60%) !default;
 
 $blueberry-100: mix($blueberry, $tint, 25%)  !default;
 $blueberry-200: mix($blueberry, $tint, 50%)  !default;
