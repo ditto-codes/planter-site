@@ -11,7 +11,7 @@ const shiki = await getHighlighter({
 });
 
 function highlighter(code, lang) {
-	return `<pre><code>{@html \`${shiki.codeToHtml(code, { lang })}\`}</code></pre>`;
+	return `{@html \`${shiki.codeToHtml(code, { lang })}\`}`;
 }
 
 const config = {

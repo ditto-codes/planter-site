@@ -11,27 +11,13 @@
 :root {
   --shiki-color-text: #{$gray};
   --shiki-color-background: #{$burlap};
-  --shiki-token-constant: #{$coral}; // <div>, 
+  --shiki-token-constant: #{$coral}; 
   --shiki-token-string: #{$dark-gray};
   --shiki-token-comment: #{$burlap-600};
-  --shiki-token-keyword: #{$coral-700}; // function, import
+  --shiki-token-keyword: #{$coral-700};
   --shiki-token-parameter: #{$coral};
-  --shiki-token-function: #{$coral-500}; // say(), .style {}
+  --shiki-token-function: #{$coral-500};
   --shiki-token-string-expression: #{$red-700};
   --shiki-token-punctuation: #{$coral};
   --shiki-token-link: #{$coral};
 }
-
-// :root {
-//   --shiki-color-text: #{$brown-300};
-//   --shiki-color-background: #{$burlap};
-//   --shiki-token-constant: #{$blueberry}; // same as func?
-//   --shiki-token-string: #{$dark-gray};
-//   --shiki-token-comment: #{$burlap-600};
-//   --shiki-token-keyword: #{$aloe-dark}; // function, import
-//   --shiki-token-parameter: #{$gray};
-//   --shiki-token-function: #{$blueberry}; // say(), .style {}
-//   --shiki-token-string-expression: #{$coral};
-//   --shiki-token-punctuation: #{#DD0000};
-//   --shiki-token-link: #{#EE0000};
-// }

@@ -4,9 +4,7 @@
   import li from './li.svelte';
   import h2 from './h2.svelte';
   import h3 from './h3.svelte';
-  import code from './code.svelte';
-  // import pre from './code-block.svelte';
-  export { hr, ul, li, h2, h3, code };
+  export { hr, ul, li, h2, h3 };
 </script>
 <script>
   export let title;
