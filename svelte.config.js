@@ -7,7 +7,7 @@ import { getHighlighter } from 'shiki';
 
 const shiki = await getHighlighter({
 	theme: 'css-variables',
-	langs: ['shell', 'js', 'html', 'svelte', 'css', 'scss']
+	langs: ['shell', 'js', 'html', 'svelte', 'css', 'scss', 'json']
 });
 
 function highlighter(code, lang) {

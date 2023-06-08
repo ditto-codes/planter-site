@@ -1,7 +1,5 @@
 <script>
   export let data;
-  const { content } = data
-  console.log(content);
+  console.log(data)
 </script>
-
-<svelte:component this={content} />
+<svelte:component this={data.content} />
