@@ -21,6 +21,10 @@
 <style lang="scss">
   .title {
     margin: 0;
+    // TODO: make this right
+    font-family: 'Quincy CF';
+    font-weight: 800;
+    font-size: 4.0rem;
   }
   .meta {
     display: flex;

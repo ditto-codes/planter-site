@@ -46,6 +46,8 @@
   }
   .content {
     padding: sp(0) $content-spacer $content-spacer;
+    // max-width: 80%;
+    max-width: 1000px;
     @include mobile {
       padding: sp(0) $content-spacer-mobile $content-spacer-mobile;
     }
