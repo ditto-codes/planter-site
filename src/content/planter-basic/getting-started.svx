@@ -1,4 +1,6 @@
-# Getting Started
+---
+title: 'Getting Started'
+---
 
 Planter Basic is a web project starter that uses [`Vite`](https://vitejs.dev/) and comes with starter styles built out with [`Sass`](https://sass-lang.com/). Basic is great for beginner web developers who are looking to take a step towards modern web development without jumping into a complex framework or library.
 

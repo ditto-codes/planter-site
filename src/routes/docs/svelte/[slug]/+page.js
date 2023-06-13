@@ -17,7 +17,7 @@ export async function load({ params }){
         url: '/docs/svelte/getting-started' 
       },
       { 
-        title: 'Styling With SASS', 
+        title: 'Styling With Sass', 
         url: '/docs/svelte/styling-with-sass' 
       },
       { 

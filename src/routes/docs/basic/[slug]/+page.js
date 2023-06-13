@@ -17,7 +17,7 @@ export async function load({ params }){
         url: '/docs/basic/getting-started' 
       },
       { 
-        title: 'Styling With SASS', 
+        title: 'Styling With Sass', 
         url: '/docs/basic/styling-with-sass' 
       },
       { 

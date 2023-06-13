@@ -187,6 +187,14 @@ code {
   border-radius: $border-radius-sm;
   vertical-align: text-bottom;
 }
+h1 > code,
+h2 > code,
+h3 > code,
+h4 > code,
+h5 > code,
+h6 > code {
+  font-size: .8em;
+}
 
 // Code Block
 pre.shiki {

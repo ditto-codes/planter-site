@@ -1,4 +1,7 @@
-# Styling with Sass
+---
+title: 'Styling With Sass'
+---
+
 Planter Basic's styles provide a working default and are easily extensible for your project. Using [`Sass`](https://sass-lang.com/), we've set up a system of tokens and basic styles to get you started.
 
 ## Global Styles
@@ -63,8 +66,8 @@ $breakpoints: (
 
 ```scss
 // Breakpoint directions:
-//   - `up` and `min` map to a `min-width` media query
-//   - `down` and `max` map to a `max-width` media query
+//   - 'up' and 'min' map to a 'min-width' media query
+//   - 'down' and 'max' map to a 'max-width' media query
 
 // Usage: breakpoint(size, direction)
 //    size: breakpoint size key
@@ -90,7 +93,7 @@ $breakpoints: (
 // Alias for between two sizes
 @include bp-between(sm, md) { /* ... */ }
 
-// General shorthand alias for `breakpoint` mixin
+// General shorthand alias for 'breakpoint' mixin
 @include bp(sm) { /* ... */ }
 @include bp(sm, up) { /* ... */ }
 @include bp(sm, md, between) { /* ... */ }
@@ -170,7 +173,7 @@ $spacer-size-map: (
   padding: space(sm md sm); // -> padding: 8px 16px 8px
 }
 
-// Using modifiers (multiples of your base `$spacer` value)
+// Using modifiers (multiples of your base '$spacer' value)
 .some {
   padding: space(1 2 1); // -> padding: calc($spacer * 1) calc($spacer * 2) calc($spacer * 1)
 }
@@ -181,7 +184,7 @@ $spacer-size-map: (
 }
 ```
 
-`sp()` is also provided as an alias for `space()`
+'sp()' is also provided as an alias for 'space()'
 ```scss
 .foo {
   padding: sp(sm); // -> padding: 8px

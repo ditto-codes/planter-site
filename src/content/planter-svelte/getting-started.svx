@@ -1,8 +1,6 @@
-<script>
-
-</script>
-
-# planter-svelte
+---
+title: 'Getting Started'
+---
 
 A Svelte web project starter made by creators of [Planter](https://planter.dev) 🌱
 

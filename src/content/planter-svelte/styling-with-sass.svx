@@ -1,8 +1,7 @@
-<script>
-    
-</script>
+---
+title: 'Styling With Sass'
+---
 
-# Styling with Sass
 Planter Svelte's styles provide a working default and are easily extensible for your project. Using [Sass](https://sass-lang.com/), we've set up a system of tokens and basic styles to get you started.
 
 Sass has also been set up to be used within your components, for local-scoped styling. All of the default components have their styles contained within their `.svelte` file.
@@ -20,8 +19,8 @@ Sass has been configured to be supported within of Svelte components. Just add t
 ```
 Note: You can use global tokens or mixins from `/src/styles` in this context. The token and mixin index files are configured to automatically be imported into each Svelte component style block that has the `lang="scss"` attribute.
 
-### `:global` Rule
-Styles inside of Svelte component style blocks can be global scoped with the `:global` rule. This can make adding custom styles a bit easier, when you want to do so in a more typical "CSS way" (even if it's not the "Svelte way"). Read more about global style in the [`svelte-preprocess` docs](https://github.com/sveltejs/svelte-preprocess#global-rule).
+### Global Rule
+Styles inside of Svelte component style blocks can be global scoped with the `:global` rule. This can make adding custom styles a bit easier, when you want to do so in a more typical "CSS way" (even if it's not the "Svelte way"). Read more about global style in the `svelte-preprocess` [docs](https://github.com/sveltejs/svelte-preprocess#global-rule).
 
 ```html
 <script>
@@ -117,8 +116,8 @@ $breakpoints: (
 
 ```scss
 // Breakpoint directions:
-//   - `up` and `min` map to a `min-width` media query
-//   - `down` and `max` map to a `max-width` media query
+//   - 'up' and 'min' map to a 'min-width' media query
+//   - 'down' and 'max' map to a 'max-width' media query
 
 // Usage: breakpoint(size, direction)
 //    size: breakpoint size key
@@ -144,7 +143,7 @@ $breakpoints: (
 // Alias for between two sizes
 @include bp-between(sm, md) { /* ... */ }
 
-// General shorthand alias for `breakpoint` mixin
+// General shorthand alias for breakpoint mixin
 @include bp(sm) { /* ... */ }
 @include bp(sm, up) { /* ... */ }
 @include bp(sm, md, between) { /* ... */ }
@@ -211,7 +210,7 @@ $spacer-size-map: (
   padding: space(sm md sm); // -> padding: 8px 16px 8px
 }
 
-// Using modifiers (multiples of your base `$spacer` value)
+// Using modifiers (multiples of your base '$spacer' value)
 .some {
   padding: space(1 2 1); // -> padding: calc($spacer * 1) calc($spacer * 2) calc($spacer * 1)
 }

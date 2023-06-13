@@ -1,3 +1,7 @@
+---
+title: 'About'
+---
+
 ## About
 
 This was created by Matt & Matthew, the co-founders of Ditto Digital.

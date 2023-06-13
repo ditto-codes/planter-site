@@ -1,4 +1,6 @@
-# Config
+---
+title: 'Config'
+---
 
 ## Vite
 Planter Basic uses [Vite](https://vitejs.dev/), a build tool that consists of a feature rich dev server and build command that bundles your code with [Rollup](https://rollupjs.org/guide/en/). Read more in the [Vite Docs](https://vitejs.dev/guide/). The Vite config file for Planter Basic can be found at the project root in `vite.config.js`.

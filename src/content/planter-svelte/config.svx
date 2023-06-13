@@ -1,49 +1,47 @@
-<script>
-    
-</script>
+---
+title: 'Config'
+---
 
-# Config
 All configuration files can be found at the project root.
 
-## `svelte.config.js`
+## svelte.config.js
 The `svelte.config.js` file is the main config file for your project, which allows you to configure various project and build options which are consumed by SvelteKit. This config isn't required to run your project, but we have included a few simple things that we can't live without.
 
 ```js
 const config = {
-	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-		vite: {
-			resolve: {
-				alias: {
-					'$styles': resolve(__dirname, "./src/styles/"),
-					'$components': resolve(__dirname, "./src/components/"),
-				}
-			}
-		}
-	},
+  kit: {
+    // hydrate the <div id="svelte"> element in src/app.html
+    target: '#svelte',
+    vite: {
+      resolve: {
+        alias: {
+          '$styles': resolve(__dirname, "./src/styles/"),
+          '$components': resolve(__dirname, "./src/components/"),
+        }
+      }
+    }
+  },
   // A Svelte preprocessor with sensible defaults and support for: PostCSS, SCSS, Less, 
   // Stylus, CoffeeScript, TypeScript, Pug and much more.
   // https://github.com/sveltejs/svelte-preprocess
-	preprocess: [
-		sveltePreprocess({
-			scss: {
+  preprocess: [
+    sveltePreprocess({
+      scss: {
         // Paths to entry files
-				includePaths: ['./src/styles', './node_modules'],
+        includePaths: ['./src/styles', './node_modules'],
         // Adds our global variables, functions, and mixins to every style block with lang="scss"
-				prependData: `
-					@import "./src/styles/_functions.scss";
-					@import "./src/styles/tokens/_index.scss";
-					@import "./src/styles/mixins/_index.scss";
-				`
-			},
-			postcss: {
-				plugins: [
-					autoprefixer(),
-				]
-			}
-		}),
-	]
+        prependData: 
+          '@import "./src/styles/_functions.scss";' + 
+          '@import "./src/styles/tokens/_index.scss";' + 
+          '@import "./src/styles/mixins/_index.scss";',
+      },
+      postcss: {
+        plugins: [
+          autoprefixer(),
+        ]
+      }
+    }),
+  ]
 }
 ```
 
