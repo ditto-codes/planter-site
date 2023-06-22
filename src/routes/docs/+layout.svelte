@@ -7,29 +7,49 @@
   $: ({ title, topic, repo, sidebar } = $page.data);
 </script>
 
-<div class="sidebar">
-  <Sidebar links={sidebar} />
-</div>
-<div class="page">
-  <div class="header">
-    <Header slot="header" {title} {topic} {repo} />
+
+<div class="docs-layout">
+  <div class="side-col left">
+    <div class="sidebar">
+      <Sidebar links={sidebar} />
+    </div>
   </div>
-  <div class="content">
-    <slot/>
+  <div class="center-col">
+    <div class="page">
+      <div class="header">
+        <Header slot="header" {title} {topic} {repo} />
+      </div>
+      <div class="content">
+        <slot/>
+      </div>
+    </div>
+  </div>
+  <div class="side-col">
+    <div class="fake-header" />
   </div>
 </div>
 
 <style lang="scss">
+  .docs-layout {
+    display: flex;
+  }
+  .side-col {
+    flex: 1;
+  }
+  .left {
+    display: flex;
+    justify-content: flex-end;
+    border-right: 1px solid $kelp;
+  }
   .sidebar {
-    position: fixed;
+    position: sticky;
     top: sp(7.5);
     width: $sidebarWidth;
     height: calc(100vh - #{$navHeight});
-    border-right: 1px solid $kelp;
     padding: $content-spacer;
   }
   .page {
-    margin-left: $sidebarWidth;
+    // margin-left: $sidebarWidth;
   }
   .header {
     padding: sp(2.5) $content-spacer;
@@ -39,10 +59,18 @@
     width: 100%;
     background-color: $paper;
     z-index: 1;
+    // height: 142px;
     @include mobile {
       padding: sp(2) $content-spacer-mobile;
     }
   }
+  .fake-header {
+    position: sticky;
+    top: $navHeight;
+    height: $headerHeight;
+    border-bottom: 1px solid $kelp;
+  }
+
   .content {
     padding: sp(0) $content-spacer $content-spacer;
     // max-width: 80%;
