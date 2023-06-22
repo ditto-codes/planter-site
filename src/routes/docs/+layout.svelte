@@ -15,13 +15,11 @@
     </div>
   </div>
   <div class="center-col">
-    <div class="page">
-      <div class="header">
-        <Header slot="header" {title} {topic} {repo} />
-      </div>
-      <div class="content">
-        <slot/>
-      </div>
+    <div class="header">
+      <Header slot="header" {title} {topic} {repo} />
+    </div>
+    <div class="content">
+      <slot/>
     </div>
   </div>
   <div class="side-col">
@@ -48,9 +46,6 @@
     height: calc(100vh - #{$navHeight});
     padding: $content-spacer;
   }
-  .page {
-    // margin-left: $sidebarWidth;
-  }
   .header {
     padding: sp(2.5) $content-spacer;
     border-bottom: 1px solid $kelp;
@@ -73,9 +68,13 @@
 
   .content {
     padding: sp(0) $content-spacer $content-spacer;
-    // max-width: 80%;
     max-width: 1000px;
-    
+    & > :global(*:first-child) {
+      margin-top: $content-spacer;
+      @include mobile {
+        margin-top: $content-spacer-mobile;
+      }
+    }
     @include mobile {
       padding: sp(0) $content-spacer-mobile $content-spacer-mobile;
     }

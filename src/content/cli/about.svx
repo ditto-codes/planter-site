@@ -2,8 +2,6 @@
 title: 'About'
 ---
 
-## About
-
 This was created by Matt & Matthew, the co-founders of Ditto Digital.
 
 We made this to spend less time setting up projects, and have a way to maintain a personal library of project starters, both local and remote.
