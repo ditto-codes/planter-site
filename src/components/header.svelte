@@ -1,5 +1,5 @@
 <script>
-	import Icon from "./icon.svelte";
+  import GithubMark from './github-mark.svelte';
   export let topic;
   export let title;
   export let repo;
@@ -11,9 +11,12 @@
 <header>
   <div class="meta">
     <div class="topic">{topic}</div>
-    <div class="github">
-      <a href="{repo.url}"><Icon name="github" />{repo.name}</a>
-    </div>
+    <a class="github" href="{repo.url}">
+      <div class="icon">
+        <GithubMark />
+      </div>
+      <div class="repo">{repo.name}</div>
+    </a>
   </div>
   <h1 class="title">{title}</h1>
 </header>
@@ -30,14 +33,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: sp(1);
   }
   .topic {
     font-weight: 700;
     color: $kelp;
-    margin-bottom: sp(1);
     font-size: 1.8rem;
   }
   .github {
-
+    display: flex;
+    justify-content: center;
+    transition: $animate-faster ease-out;
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      background-color: transparent;
+      color: $coral-400;
+    }
+    .icon {
+      display: flex;
+      margin-right: sp(.5);
+    }
+    .repo {
+      line-height: 1.2;
+    }
   }
 </style>
