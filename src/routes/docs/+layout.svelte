@@ -41,10 +41,16 @@
   .side-col {
     flex: 1;
   }
+
   .left {
     display: flex;
     justify-content: flex-end;
     border-right: 1px solid $kelp;
+
+    @include tablet {
+      display: none;
+    }
+    
   }
   .sidebar {
     position: sticky;
@@ -61,7 +67,11 @@
     width: 100%;
     background-color: $paper;
     z-index: 1;
-    // height: 142px;
+    
+    @include tablet {
+      top: calc($navHeight + $mobileNavHeight);
+    }
+
     @include mobile {
       padding: sp(2) $content-spacer-mobile;
     }

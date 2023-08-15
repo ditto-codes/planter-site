@@ -161,7 +161,7 @@
   }
 }
 @mixin tablet($direction: down) {
-  @include bp(xl, $direction) {
+  @include bp(lg, $direction) {
     @content;
   }
 }

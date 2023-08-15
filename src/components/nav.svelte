@@ -1,5 +1,6 @@
 <script>
 import { page } from '$app/stores';
+
   let url;
   $: url = $page.url.pathname;
 
@@ -47,6 +48,11 @@ import { page } from '$app/stores';
   .left {
     min-width: $sidebarWidth;
     width: 20%;
+
+    @include tablet {
+      display: none;
+    }
+
   }
   nav {
     display: flex;
