@@ -76,6 +76,7 @@
   .content {
     padding: sp(0) $content-spacer $content-spacer;
     max-width: 1000px;
+    line-height: 1.5;
     & > :global(*:first-child) {
       margin-top: $content-spacer;
       @include mobile {
