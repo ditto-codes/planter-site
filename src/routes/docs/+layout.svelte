@@ -31,6 +31,13 @@
   .docs-layout {
     display: flex;
   }
+
+  .center-col {
+    // required for pre-breakout overflow
+    // 
+    min-width: 0;
+  }
+
   .side-col {
     flex: 1;
   }
