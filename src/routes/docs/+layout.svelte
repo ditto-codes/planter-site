@@ -1,18 +1,18 @@
 <script>
   import '$styles/style.scss';
-  import MobileNav from '$components/mobile-nav.svelte'
+  import DocsMobileNav from '$components/docs-mobile-nav.svelte'
   import Header from '$components/header.svelte'
-  import Sidebar from '$components/sidebar.svelte'
+  import DocsNav from '$components/docs-nav.svelte'
   import { page } from '$app/stores';
-  $: ({ title, topic, repo, sidebar } = $page.data);
+  $: ({ title, topic, repo, nav } = $page.data);
 </script>
 
-<MobileNav />
+<DocsMobileNav />
 
 <div class="docs-layout">
   <div class="side-col left">
     <div class="sidebar">
-      <Sidebar links={sidebar} />
+      <DocsNav links={nav} />
     </div>
   </div>
   <div class="center-col">

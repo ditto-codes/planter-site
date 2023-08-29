@@ -1,14 +1,11 @@
 <script>
-
-  // only used in the /docs/+layout.svelte
-
   import { page } from '$app/stores';
   import { slide } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
   import { onMount } from 'svelte'
 
   import Icon from '$components/icon.svelte'
-  $: ({ sidebar: links } = $page.data);
+  $: ({ nav: links } = $page.data);
   
   let url;
   $: url = $page.url.pathname;

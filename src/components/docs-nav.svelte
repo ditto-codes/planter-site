@@ -27,9 +27,6 @@
     margin: 0;
     padding: 0;
   }
-  li {
-    // margin-bottom: sp(1);
-  }
   a {
     color: $gray;
     text-decoration: none;

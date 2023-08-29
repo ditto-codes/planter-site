@@ -11,7 +11,7 @@ export async function load({ params }){
     },
     title: metadata?.title ,
     content,
-    sidebar: [
+    nav: [
       { 
         title: 'Getting Started', 
         url: '/docs/getting-started' 
