@@ -64,20 +64,13 @@
     padding: $content-spacer;
   }
   .header {
-    padding: sp(2.5) $content-spacer;
-    border-bottom: 1px solid $kelp;
     position: sticky;
     top: $navHeight;
     width: 100%;
-    background-color: $paper;
     z-index: 1;
     
     @include tablet {
       top: calc($navHeight + $mobileNavHeight);
-    }
-
-    @include mobile {
-      padding: sp(2) $content-spacer-mobile;
     }
   }
   .fake-header {

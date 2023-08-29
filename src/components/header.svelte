@@ -10,7 +10,6 @@
 
 <header>
   <div class="meta">
-    <div class="topic">{topic}</div>
     <a class="github" href="{repo.url}">
       <div class="icon">
         <GithubMark />
@@ -22,29 +21,39 @@
 </header>
 
 <style lang="scss">
+  header {
+    background-color: $paper;
+    padding: sp(2.5) $content-spacer;
+    border-bottom: 1px solid $kelp;
+    @include mobile {
+      padding: sp(1.5) $content-spacer-mobile sp(1.2);
+    }
+  }
   .title {
     margin: 0;
     // TODO: make this right
     font-family: 'Quincy CF';
     font-weight: 800;
     font-size: 4.0rem;
+    line-height: 1.2;
+
+    @include tablet {
+      font-size: 3.5rem;
+    }
+    @include mobile {
+      font-size: 2.8rem;
+    }
   }
   .meta {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: sp(1);
-  }
-  .topic {
-    font-weight: 700;
-    color: $kelp;
-    font-size: 1.8rem;
+    margin-bottom: sp(1.25);
   }
   .github {
     display: flex;
     justify-content: center;
     transition: $animate-faster ease-out;
-    color: $black;
+    color: $kelp;
     text-decoration: none;
     &:hover {
       background-color: transparent;
