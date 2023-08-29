@@ -39,14 +39,6 @@
 </div>
 
 <style lang="scss">
-  // a :global(h1),
-  // a :global(h2),
-  // a :global(h3),
-  // a :global(h4),
-  // a :global(h5),
-  // a :global(h6) {
-  //   margin-bottom: 0;
-  // }
   .heading {
     position: relative;
     display: block;
@@ -74,11 +66,17 @@
     user-select: none;
     text-decoration: none;
     font-size: 2rem;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-      text-underline-offset: .2em;
-      text-decoration-thickness: 1.5px;
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: .2em;
+        text-decoration-thickness: 1.5px;
+      }
+    }
+
+    @include mobile {
+      margin-left: sp(-2);
     }
   }
 

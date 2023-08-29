@@ -36,5 +36,5 @@ A place to house your components. This directory includes a few simple component
 ### `/src/styles`
 Global stylesheets, Sass variables, mixins, and functions. 
 
-### `/src/routes/demo` & `/src/components/demo`
+### Demo Files
 The `src/routes/demo` page showcases how SvelteKit can work, while also documenting the components and default styles we've included. All demo content is contained within `src/routes/demo` and `src/components/demo` and can be freely deleted.
