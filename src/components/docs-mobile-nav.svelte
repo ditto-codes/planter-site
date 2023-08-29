@@ -136,7 +136,6 @@ li {
   align-items: center;
 }
 
-
 .menu-text {
   padding: 1px 0 0 sp(.5);
   line-height: 1;

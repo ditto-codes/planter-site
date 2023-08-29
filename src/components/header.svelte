@@ -1,6 +1,5 @@
 <script>
   import GithubMark from './github-mark.svelte';
-  export let topic;
   export let title;
   export let repo;
 
