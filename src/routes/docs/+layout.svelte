@@ -1,12 +1,13 @@
 <script>
   import '$styles/style.scss';
-  import Nav from '$components/nav.svelte';
+  import MobileNav from '$components/mobile-nav.svelte'
   import Header from '$components/header.svelte'
   import Sidebar from '$components/sidebar.svelte'
   import { page } from '$app/stores';
   $: ({ title, topic, repo, sidebar } = $page.data);
 </script>
 
+<MobileNav />
 
 <div class="docs-layout">
   <div class="side-col left">
@@ -30,6 +31,9 @@
 <style lang="scss">
   .docs-layout {
     display: flex;
+    @include tablet {
+      padding-top: $mobileNavHeight;
+    }
   }
 
   .center-col {
