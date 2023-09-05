@@ -23,22 +23,19 @@
       <slot/>
     </div>
   </div>
-  <div class="side-col">
-    <div class="fake-header" />
-  </div>
+  <div class="side-col"/>
 </div>
 
 <style lang="scss">
   .docs-layout {
     display: flex;
     @include tablet {
-      padding-top: $mobileNavHeight;
+      padding-top: $docs-mobile-nav-height;
     }
   }
 
   .center-col {
     // required for pre-breakout overflow
-    // 
     min-width: 0;
   }
 
@@ -59,30 +56,27 @@
   .sidebar {
     position: sticky;
     top: sp(7.5);
-    width: $sidebarWidth;
-    height: calc(100vh - #{$navHeight});
+    width: $sidebar-width;
+    height: calc(100vh - #{$nav-height});
     padding: $content-spacer;
   }
   .header {
     position: sticky;
-    top: $navHeight;
+    top: $nav-height;
     width: 100%;
     z-index: 1;
     
     @include tablet {
-      top: calc($navHeight + $mobileNavHeight);
+      top: calc($nav-height + $docs-mobile-nav-height);
     }
-  }
-  .fake-header {
-    position: sticky;
-    top: $navHeight;
-    height: $headerHeight;
-    border-bottom: 1px solid $kelp;
+    @include mobile {
+      top: calc($mobile-nav-height + $docs-mobile-nav-height);
+    }
   }
 
   .content {
     padding: sp(0) $content-spacer $content-spacer;
-    max-width: 1000px;
+    max-width: $docs-content-max-width;
     line-height: 1.5;
     & > :global(*:first-child) {
       margin-top: $content-spacer;

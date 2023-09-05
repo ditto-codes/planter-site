@@ -1,8 +1,11 @@
 @import '../functions.scss';
 
-$navHeight: sp(7.5);
-$mobileNavHeight: 40px;
-$sidebarWidth: 250px;
-$headerHeight: 131px;
+$nav-height: sp(7.5);
+$mobile-nav-height: sp(6);
+$docs-mobile-nav-height: 40px;
+$sidebar-width: 250px;
+$header-height: 131px;
 $content-spacer: sp(3.5);
 $content-spacer-mobile: sp(2);
+$docs-content-max-width: 1000px;
+$page-max-width: 1500px;

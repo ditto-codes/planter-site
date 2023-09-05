@@ -11,6 +11,12 @@
 
 <style lang="scss">
   .layout {
-    padding-top: $navHeight;
+    padding-top: $nav-height;
+    max-width: $page-max-width;
+    margin: 0 auto;
+
+    @include mobile {
+      padding-top: $mobile-nav-height;
+    }
   }
 </style>

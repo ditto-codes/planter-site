@@ -145,10 +145,12 @@ a:not(.unstyled) {
   text-decoration: $link-decoration;
   letter-spacing: $link-letter-spacing;
 
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    background-color: $link-hover-background-color;
+  @media (hover: hover) {
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+      background-color: $link-hover-background-color;
+    }
   }
 
   &:focus-visible {

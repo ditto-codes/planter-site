@@ -61,7 +61,7 @@
   padding: 0 $content-spacer;
   z-index: 100;
   width: 100%;
-  height: $mobileNavHeight;
+  height: $docs-mobile-nav-height;
   align-items: center;
   background-color: $paper-400;
   border-bottom: 1px solid $kelp;
@@ -77,7 +77,7 @@
 
 nav {
   position: absolute;
-  top: $mobileNavHeight;
+  top: $docs-mobile-nav-height;
   left: 0;
   width: 100%;
   background-color: $paper-500;
