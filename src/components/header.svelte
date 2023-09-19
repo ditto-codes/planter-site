@@ -54,9 +54,11 @@
     transition: $animate-faster ease-out;
     color: $kelp;
     text-decoration: none;
-    &:hover {
-      background-color: transparent;
-      color: $coral-400;
+    @media (hover: hover) {
+      &:hover {
+        background-color: transparent;
+        color: $coral-400;
+      }
     }
     .icon {
       display: flex;

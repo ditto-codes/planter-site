@@ -21,6 +21,7 @@ const config = {
 		alias: {
 			'$styles': './src/styles/',
 			'$components': './src/components/',
+			'$content': './src/content/',
 		}
 	},
 	preprocess: [
