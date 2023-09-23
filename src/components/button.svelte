@@ -75,7 +75,7 @@ button,
 a {
   // Theme
   $color: $paper;
-  $bg-color: $kelp;
+  $bg-color: $kelp-dark;
   $border: $border-width solid transparent;
   $hover-bg-color: $kelp-600;
   $active-bg-color: $kelp-600;

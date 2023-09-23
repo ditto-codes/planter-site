@@ -1,4 +1,8 @@
-<li><slot/></li>
+<script>
+  export let type
+</script>
+
+<li class="{type}"><slot/></li>
 
 <style lang="scss">
   li {
@@ -14,5 +18,15 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+
+    &.fill {
+      min-height: 425px;
+      height: 100%;
+      background-color: $blueberry;
+      color: $paper;
+      border: none;
+      box-shadow: none;
+    }
+
   }
 </style>
