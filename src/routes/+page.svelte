@@ -1,26 +1,39 @@
 <script>
   import Button from '$components/button.svelte';
+  import Code from '$components/code.svelte';
+  import List from '$components/List'
 </script>
 
-<div class="splash">
-  <img src="/planter-logo.png" alt="">
-  <h1>Planter Svelte</h1>
-  <p>Welcome to Planter Svelte!</p>
-  <Button href="/docs/getting-started">Docs</Button>
-  <span class="spacer"></span>
-  <Button href="/demo/typography">Demo</Button>
-</div>
+<section>
+<h2>Add a planter.</h2>
+<p>Install the Planter CLI.</p>
+<p>Add a planter to your library.</p>
+<Code>npm i -g @planter/cli
+<span>planter add </span>user/project my-planter
+</Code>
+
+<List title="My Library">
+  <List.Item>
+    my-planter
+  </List.Item>
+  <List.Item>
+    vite-starter
+  </List.Item>
+  <List.Item>
+    basic
+  </List.Item>
+  <List.Item>
+    svelte
+  </List.Item>
+  <List.Item>
+    cowboy-stuff
+  </List.Item>
+</List>
+
+</section>
 
 <style lang="scss">
-  .splash {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  section {
 
-    .spacer {
-      margin-left: sp(sm);
-    }
   }
 </style>

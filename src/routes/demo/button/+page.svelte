@@ -67,29 +67,26 @@
   <Example label="Default">
     <Button>Button</Button>
   </Example>
-  <Example label="on:click">
-    <Button on:click={onClick}>Clicked: {count}</Button>
+  <Example label="Ghost">
+    <Button variant="ghost">Ghost</Button>
   </Example>
-  <Example label="Toggle Button">
-    <Button on:click={onPress} {pressed}>Toggle Button</Button>
-  </Example>
-  <Example label="Unstyled">
-    <Button variant="unstyled">I look like normal text but I'm a button</Button>
-  </Example>
-  <Example label="Link (HREF)">
-    <Button href="#somewhere">Infamous Anchor Button</Button>
-  </Example>
-  <Example label="Text">
-    <Button variant="text">Text Button</Button>
-  </Example>
-  <Example label="Small Ghost">
-    <Button size="small" variant="ghost">Small Ghost</Button>
-  </Example>
-  <Example label="Large Disabled">
-    <Button size="large" disabled>Disabled</Button>
-  </Example>
+  <div class="dark-bg">
+    <Example label="Light">
+      <Button variant="light">Light Button</Button>
+    </Example>
+    <Example label="Ghost Light">
+      <Button variant="ghost light">Ghost Light Button</Button>
+    </Example>
+  </div>
 </Section>
 
 <Section title="Props">
   <Props {props} restProps />
 </Section>
+
+<style lang="scss">
+  .dark-bg {
+    background-color: $kelp-dark;
+    padding: 10px;
+  }
+</style>
