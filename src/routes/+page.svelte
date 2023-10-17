@@ -9,7 +9,7 @@
 <section class="hero">
   <Hero/>
 </section>
-
+<div class="spacer" />
 <section>
   <h2>Add to your library.</h2>
   <div class="description">
