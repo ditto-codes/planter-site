@@ -15,6 +15,7 @@
     padding: sp(2.5);
     max-width: 475px;
     margin: 0 auto;
+    text-align: left;
   }
   .title {
     color: $gray;

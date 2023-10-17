@@ -3,6 +3,7 @@
   import DocsMobileNav from '$components/docs-mobile-nav.svelte'
   import Header from '$components/header.svelte'
   import DocsNav from '$components/docs-nav.svelte'
+  import Footer from '$components/footer.svelte';
   import { page } from '$app/stores';
   $: ({ title, topic, repo, nav } = $page.data);
 </script>
@@ -25,6 +26,8 @@
   </div>
   <div class="side-col"/>
 </div>
+
+<Footer />
 
 <style lang="scss">
   .docs-layout {

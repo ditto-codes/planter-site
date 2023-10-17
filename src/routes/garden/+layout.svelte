@@ -1,3 +1,7 @@
+<script>
+  import Footer from '$components/footer.svelte';
+</script>
+
 <div class="garden">
   <slot/>
 </div>
@@ -8,6 +12,8 @@
     @include bp(lg, down) {
       padding: $content-spacer $content-spacer-mobile 0;
     }
+    min-height: calc(100vh - #{$header-height});
+    min-height: 100vh;
     // padding: 60px 150px 0 150px;
     // @include bp(xl, down) {
     //   padding: 40px 75px 0 75px;
@@ -17,3 +23,5 @@
     // }
   }
 </style>
+
+<Footer />
