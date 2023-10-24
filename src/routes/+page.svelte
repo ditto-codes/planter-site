@@ -1,9 +1,16 @@
 <script>
+  import IntersectionObserver from 'svelte-intersection-observer';
   import Button from '$components/button.svelte';
   import Code from '$components/code.svelte';
   import List from '$components/list';
   import Hero from '$components/hero.svelte';
   import Footer from '$components/footer.svelte';
+
+  import { fade } from 'svelte/transition';
+
+  let animationNodeLibrary;
+  let animationNodeCreate;
+
 </script>
 
 <section class="hero">
@@ -24,18 +31,18 @@
 
   <div class="graphic-group library">
     <List title="My Library">
-      <List.Item>my-planter</List.Item>
-      <List.Item>vite-starter</List.Item>
-      <List.Item>basic</List.Item>
-      <List.Item>svelte</List.Item>
-      <List.Item>cowboy-stuff</List.Item>
+      <List.Item animate={0}>my-planter</List.Item>
+      <List.Item animate={1}>vite-starter</List.Item>
+      <List.Item animate={2}>basic</List.Item>
+      <List.Item animate={3}>svelte</List.Item>
+      <List.Item animate={4}>cowboy-stuff</List.Item>
     </List>
   </div>
 
 </section>
 <div class="spacer" />
 <section>
-  <h2>Create.</h2>
+  <h2>Create</h2>
   <div class="description">
     <p>Clone your saved planter with no git history.</p>
   </div>
@@ -43,20 +50,38 @@
 <Code><span>planter create </span>user/project my-planter</Code>
   </div>
   
-  <div class="graphic-group create-libraries">   
-    <List title="My Library">
-      <List.Item>my-planter</List.Item>
-      <List.Item>vite-starter</List.Item>
-      <List.Item>basic</List.Item>
-      <List.Item>svelte</List.Item>
-      <List.Item>cowboy-stuff</List.Item>
-    </List>
-    <List title="My Library">
-      <List.Item type="fill">
-        my-planter
-      </List.Item>
-    </List>
-  </div>
+  <IntersectionObserver element={animationNodeCreate} threshold={.8} let:intersecting once>
+    <div class="graphic-group create-libraries" bind:this={animationNodeCreate} class:animate={intersecting}>
+      <div class="animation-container lib">
+        <List title="My Library">
+          <List.Item>my-planter</List.Item>
+          <List.Item>vite-starter</List.Item>
+          <List.Item>basic</List.Item>
+          <List.Item>svelte</List.Item>
+          <List.Item>cowboy-stuff</List.Item>
+        </List>
+        <div class="animation-spacer"/>
+      </div>
+     <div class="animation-container dir">
+        <div class="animation-spacer">
+          <!-- Placeholder for size -->
+          <List title="My Library">
+            <List.Item>my-planter</List.Item>
+            <List.Item>vite-starter</List.Item>
+            <List.Item>basic</List.Item>
+            <List.Item>svelte</List.Item>
+            <List.Item>cowboy-stuff</List.Item>
+          </List>
+        </div>
+        <List title="./my-dir">
+          <List.Item type="fill">
+            my-planter
+          </List.Item>
+        </List>
+      </div>
+    </div>
+  </IntersectionObserver>
+  
 </section>
 <div class="spacer" />
 <section class="garden-cta">
@@ -65,18 +90,19 @@
 
 <section class="why-planter">
   <div class="why-planter-bg background-img">
-    <img src="why-planter-plant.png" alt="Background Plant"/>
+    <img src="ditto-codes-banner.png" alt="Background Plant"/>
   </div>
   <div class="inner">
     <h2>Why Planter?</h2>
   
-    <p>
+    <!-- <p>
       We have spent a lot of time starting projects—learning about 
       toolchains, trying out project starters from across the web, and
       even creating our own starters. What we discovered was that we 
       wanted a tool that gave us the ability to create a library of starters, 
       and an easy way to start new projects using that library.
-    </p>
+    </p> -->
+    <p>We wanted a tool that gave us the ability to create a library of starters.</p>
   
     <p>
       <span>Planter is a tool that enables you to...</span>
@@ -94,12 +120,12 @@
       </li>
     </ul>
   
-    <p>
+    <!-- <p>
       Along with creating Planter, we want to promote the value of well-made 
       reusable & shareable project starters. <a href="/garden">The Garden</a> is a place to 
       showcase our own starters as well as feature other ones we think 
       are&nbsp;great!
-    </p>
+    </p> -->
   
     <p>
       Be nice to your future self and get started with&nbsp;Planter.
@@ -113,7 +139,7 @@
 
 </section>
 
-<section class="ditto-codes">
+<!-- <section class="ditto-codes">
   <div class="ditto-codes-bg background-img">
     <img src="ditto-codes-banner.png" alt="Background of Plant" />
   </div>
@@ -140,7 +166,7 @@
       interesting web based products and&nbsp;tools.
     </p>
   </div>
-</section>
+</section> -->
 
 <Footer dark />
 
@@ -171,7 +197,84 @@
   }
 
   .graphic-group {
-    margin-top: sp(10);
+    margin-top: sp(7.2);
+    position: relative;
+  }
+
+  .animation-container {
+    display: flex;
+    padding: 0 15px;
+    justify-content: center;
+
+    :global(.list) {
+      // so it fills the container without considering the spacers
+      flex-grow: 1;
+      margin: 0;
+    }
+  }
+
+  .animation-container.lib {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .animation-container.dir {
+    opacity: 0;
+  }
+
+  .animation-spacer {
+    width: 0;
+    max-width: 0;
+  }
+
+  .animate {
+  
+    .animation-spacer {
+      animation: create 500ms cubic-bezier(0.85, 0, 0.15, 1) forwards;
+    }
+
+    .dir {
+      animation: fade 500ms 250ms ease-in-out forwards;
+    }
+    .dir :global(.list ul) {
+      animation: grow 500ms 400ms cubic-bezier(0.85, 0, 0.15, 1) forwards;
+    }
+    
+  }
+  .animation-container.dir :global(.list) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @keyframes grow {
+    from {
+      flex-grow: 0;
+    }
+    to {
+      flex-grow: 1;
+    }
+  }
+
+  @keyframes fade {
+    5% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes create {
+    from {
+      opacity: 0;
+      width: 0;
+      max-width: 0;
+    } to {
+      opacity: 1;
+      width: 100%;
+      max-width: 505px;
+    }
   }
   
   .shell-example {
@@ -188,7 +291,7 @@
     place-content: center;
     & > :global(*) {
       width: 100%;
-      margin: 0 30px;
+      // margin: 0 30px;
     }
 
     @include bp(lg, down) {
@@ -217,14 +320,16 @@
   }
   .garden-cta {
     padding: sp(6) 0;
-    background-color: $light-gray;
+    background-color: $kelp-dark;
+    color: $paper;
     margin-bottom: 0;
     p {
       font-family: $font-family-monospace;
     }
   }
   .why-planter {
-    background-color: $kelp-dark;
+    // background-color: $kelp-dark;
+    background-color: #232323;
     color: white;
     text-align: left;
     padding: sp(12);
@@ -238,7 +343,7 @@
       right: 0;
       left: unset;
       img {
-        mix-blend-mode: difference;
+        mix-blend-mode: overlay;
         opacity: 0.5;
       }
     }

@@ -1,8 +1,9 @@
 <script>
   export let type
+  export let animate
 </script>
 
-<li class="{type}"><slot/></li>
+<li class="{type}" class:animate><slot/></li>
 
 <style lang="scss">
   li {
@@ -20,7 +21,7 @@
     }
 
     &.fill {
-      min-height: 425px;
+      // min-height: 425px;
       height: 100%;
       background-color: $blueberry;
       color: $paper;
