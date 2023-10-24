@@ -95,14 +95,7 @@
   <div class="inner">
     <h2>Why Planter?</h2>
   
-    <!-- <p>
-      We have spent a lot of time starting projects—learning about 
-      toolchains, trying out project starters from across the web, and
-      even creating our own starters. What we discovered was that we 
-      wanted a tool that gave us the ability to create a library of starters, 
-      and an easy way to start new projects using that library.
-    </p> -->
-    <p>We wanted a tool that gave us the ability to create a library of starters.</p>
+    <p>Quickly cloning a repo with zero git history can be cumbersome, and managing a library of boilerplates isn't always easy. </p>
   
     <p>
       <span>Planter is a tool that enables you to...</span>
@@ -110,22 +103,15 @@
   
     <ul>
       <li>
-        save repos as planters to your library using planter add,
+        Reduce friction when starting new projects from existing code.
       </li>
       <li>
-        start new projects with your saved planters using planter create,
+        Quickly try out public repos in one line: <code>planter create&nbsp;&lt;repo-url&gt;</code>
       </li>
       <li>
-        and even quickly use a repo as a starter without saving it, using <code>planter create&nbsp;repo-url</code>
+        Maintain and re-use unpublished / non-repo directories via Local Planters.
       </li>
     </ul>
-  
-    <!-- <p>
-      Along with creating Planter, we want to promote the value of well-made 
-      reusable & shareable project starters. <a href="/garden">The Garden</a> is a place to 
-      showcase our own starters as well as feature other ones we think 
-      are&nbsp;great!
-    </p> -->
   
     <p>
       Be nice to your future self and get started with&nbsp;Planter.
@@ -340,15 +326,17 @@
       padding: sp(3);
     }
     .why-planter-bg {
-      right: 0;
-      left: unset;
+      height: 100%;
+      pointer-events: none;
       img {
         mix-blend-mode: overlay;
-        opacity: 0.5;
+        opacity: 0.3;
+        height: 100%;
+        max-width: 100%;
       }
     }
     .inner {
-      width: 60%;
+      width: 70%;
       @include bp(lg, down) {
         width: 100%;
       }
@@ -362,39 +350,39 @@
     }
   }
   
-  .ditto-codes {
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #232323;
-    color: white;
-    padding: sp(12);
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    @include bp(lg, down) {
-      padding: sp(3);
-    }
-    h2 {
-      font-size: sp(14.2);
-    }
-    p {
-      margin-right: sp(3);
-      width: calc(50% - sp(3));
-      @include bp(lg, down) {
-        width: 100%;
-        margin-bottom: sp(3);
-        margin-right: 0;
-      }
-    }
-    .copy {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .ditto-codes-bg {
-      img {
-        opacity: .5;
-        mix-blend-mode: overlay;
-      }
-    }
-  }
+  // .ditto-codes {
+  //   margin-top: 0;
+  //   margin-bottom: 0;
+  //   background-color: #232323;
+  //   color: white;
+  //   padding: sp(12);
+  //   text-align: left;
+  //   position: relative;
+  //   overflow: hidden;
+  //   @include bp(lg, down) {
+  //     padding: sp(3);
+  //   }
+  //   h2 {
+  //     font-size: sp(14.2);
+  //   }
+  //   p {
+  //     margin-right: sp(3);
+  //     width: calc(50% - sp(3));
+  //     @include bp(lg, down) {
+  //       width: 100%;
+  //       margin-bottom: sp(3);
+  //       margin-right: 0;
+  //     }
+  //   }
+  //   .copy {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //   }
+  //   .ditto-codes-bg {
+  //     img {
+  //       opacity: .5;
+  //       mix-blend-mode: overlay;
+  //     }
+  //   }
+  // }
 </style>
