@@ -1,9 +1,20 @@
 <script>
-  export let type
-  export let animate
+	import { fly } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import { backOut } from 'svelte/easing';
+  export let type;
+  export let key;
+  let load = false;
+  onMount(() => {
+    load = true;
+  });
 </script>
 
-<li class="{type}" class:animate><slot/></li>
+{#if load}
+  <li class="{type}" transition:fly={{duration: 500, delay: 150 * key, y: 50 * 1, easing: backOut}}>
+    <slot />
+  </li>
+{/if}
 
 <style lang="scss">
   li {

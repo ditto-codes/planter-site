@@ -28,16 +28,19 @@
 <span>planter add </span>user/project my-planter
 </Code>
   </div>
-
-  <div class="graphic-group library">
-    <List title="My Library">
-      <List.Item animate={0}>my-planter</List.Item>
-      <List.Item animate={1}>vite-starter</List.Item>
-      <List.Item animate={2}>basic</List.Item>
-      <List.Item animate={3}>svelte</List.Item>
-      <List.Item animate={4}>cowboy-stuff</List.Item>
-    </List>
-  </div>
+  <IntersectionObserver element={animationNodeLibrary} threshold={.8} let:intersecting once>
+    <div class="graphic-group library" bind:this={animationNodeLibrary}>
+      <List title="My Library">
+        {#if intersecting}
+          <List.Item key={0}>my-planter</List.Item>
+          <List.Item key={1}>vite-starter</List.Item>
+          <List.Item key={2}>basic</List.Item>
+          <List.Item key={3}>svelte</List.Item>
+          <List.Item key={4}>cowboy-stuff</List.Item>
+        {/if}
+      </List>
+    </div>
+  </IntersectionObserver>
 
 </section>
 <div class="spacer" />

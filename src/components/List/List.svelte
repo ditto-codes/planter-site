@@ -16,6 +16,7 @@
     max-width: 475px;
     margin: 0 auto;
     text-align: left;
+    min-height: 509px;
   }
   .title {
     color: $gray;
