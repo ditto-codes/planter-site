@@ -4,10 +4,12 @@
 </script>
 
 <Nav />
-<slot/>
+<div class="home-layout">
+  <slot/>
+</div>
 
 <style lang="scss">
-  .layout {
+  .home-layout {
     padding-top: $nav-height;
     @include mobile {
       padding-top: $mobile-nav-height;

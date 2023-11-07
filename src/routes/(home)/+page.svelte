@@ -2,11 +2,9 @@
   import IntersectionObserver from 'svelte-intersection-observer';
   import Button from '$components/button.svelte';
   import Code from '$components/code.svelte';
-  import List from '$components/list';
+  import List from '$components/list/index.js';
   import Hero from '$components/hero.svelte';
   import Footer from '$components/footer.svelte';
-
-  import { fade } from 'svelte/transition';
 
   let animationNodeLibrary;
   let animationNodeCreate;
@@ -92,10 +90,10 @@
 <section class="garden-cta full-width">
   <p>Try out our <a href="/garden">official planters</a></p>
 </section>
-
+<!-- TODO: add max-width to this stuff's content for nice reading on large screens -->
 <section class="why-planter full-width">
   <div class="why-planter-bg background-img">
-    <img src="ditto-codes-banner.png" alt="Background Plant"/>
+    <img src="/ditto-codes-banner.png" alt="Background Plant"/>
   </div>
   <div class="inner">
     <h2>Why Planter?</h2>
