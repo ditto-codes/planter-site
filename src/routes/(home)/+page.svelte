@@ -84,6 +84,8 @@
   
 </section>
 <div class="spacer" />
+
+
 <section class="garden-cta">
   <p>Try out our <a href="/garden">official planters</a></p>
 </section>
@@ -94,13 +96,13 @@
   </div>
   <div class="inner">
     <h2>Why Planter?</h2>
-  
+
     <p>Quickly cloning a repo with zero git history can be cumbersome, and managing a library of boilerplates isn't always easy. </p>
-  
+
     <p>
       <span>Planter is a tool that enables you to...</span>
     </p>
-  
+
     <ul>
       <li>
         Reduce friction when starting new projects from existing code.
@@ -112,47 +114,18 @@
         Maintain and re-use unpublished / non-repo directories via Local Planters.
       </li>
     </ul>
-  
+
     <p>
       Be nice to your future self and get started with&nbsp;Planter.
     </p>
-  
+
     <div class="buttons">
       <Button href="/docs/getting-started" variant="light">Get Started</Button>
       <Button href="/garden" variant="ghost light">The Garden</Button>
     </div>
   </div>
-
 </section>
 
-<!-- <section class="ditto-codes">
-  <div class="ditto-codes-bg background-img">
-    <img src="ditto-codes-banner.png" alt="Background of Plant" />
-  </div>
-  <div class="h2-contain">
-    <h2>ditto.codes</h2>
-  </div>
-  <div class="copy">
-    <p>
-      Planter was originally created by Matthew 
-      Alicea in 2018 in order to have a project 
-      starter for web projects without having to go 
-      through a tedious setup process every time. 
-      Since then, Planter has grown into a CLI 
-      made to easily adopt and create your own 
-      project starters with the same goal at heart: 
-      spend less time setting up projects, and more 
-      time&nbsp;creating!
-    </p>
-    <p>
-      This iteration was built with the help of 
-      Matthew Gluf who is a designer and self-taught 
-      developer. Between the two they form Ditto Labs, 
-      a collaborative effort to create helpful and 
-      interesting web based products and&nbsp;tools.
-    </p>
-  </div>
-</section> -->
 
 <Footer dark />
 
