@@ -86,11 +86,11 @@
 <div class="spacer" />
 
 
-<section class="garden-cta">
+<section class="garden-cta full-width">
   <p>Try out our <a href="/garden">official planters</a></p>
 </section>
 
-<section class="why-planter">
+<section class="why-planter full-width">
   <div class="why-planter-bg background-img">
     <img src="ditto-codes-banner.png" alt="Background Plant"/>
   </div>
@@ -133,6 +133,10 @@
   section {
     margin: sp(2) 0;
     text-align: center;
+  }
+  section:not(.full-width) {
+    max-width: $page-max-width;
+    margin: 0 auto;
   }
   h2 {
     font-family: $display-font-family;
