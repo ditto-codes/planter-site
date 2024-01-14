@@ -91,6 +91,7 @@ a {
   transition: $animate-fast;
   text-decoration: none;
   display: inline-block;
+  text-align: center;
 
   &:hover {
     background-color: $hover-bg-color;

@@ -3,7 +3,7 @@
 </script>
 
 <footer class:dark>
-  MIT Licensed  | &copy; 2023 Matthew & Matt at Ditto Labs
+  MIT Licensed  | &copy; 2024 Matthew & Matt at Ditto Labs
 </footer>
 
 <style lang="scss">

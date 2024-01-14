@@ -85,12 +85,10 @@
   
 </section>
 <div class="spacer" />
-
-
 <section class="garden-cta full-width">
-  <p>Try out our <a href="/garden">official planters</a></p>
+  <h2>Visit <a href="/garden">The Garden</a></h2>
+  <p>Try our official planters or submit your own.</p>
 </section>
-<!-- TODO: add max-width to this stuff's content for nice reading on large screens -->
 <section class="why-planter full-width">
   <div class="why-planter-bg background-img">
     <img src="/ditto-codes-banner.png" alt="Background Plant"/>
@@ -127,7 +125,6 @@
   </div>
 </section>
 
-
 <Footer dark />
 
 <style lang="scss">
@@ -139,17 +136,33 @@
     max-width: $page-max-width;
     margin: 0 auto;
   }
+  section:not(.hero) {
+    @include bp(lg, down) {
+      padding-left: sp(3);
+      padding-right: sp(3);
+    }
+    @include bp(md, down) {
+      padding-left: sp(2);
+      padding-right: sp(2);
+    }
+  }
   h2 {
     font-family: $display-font-family;
     font-weight: $display-font-weight;
     font-size: $display-font-size;
     letter-spacing: $display-letter-spacing;
+    @include bp(md, down) {
+      font-size: minmax(320px, md, 32px, 56px);
+    }
   }
   p, li {
     font-family: $display-font-family;
     font-weight: 500;
     font-size: sp(2.2);
     margin-bottom: sp(.5);
+    @include bp(lg, down) {
+      font-size: sp(1.6);
+    }
     a {
       &:hover {
         background-color: rgba($coral-400, 0.2);
@@ -243,10 +256,13 @@
   
   .shell-example {
     text-align: left;
+    :global(code) {
+      text-wrap: wrap;
+    }
   }
 
   .spacer {
-    margin-top: sp(20);
+    margin-top: minmax(sm, full, 60, 200);
   }
   
   .create-libraries {
@@ -255,21 +271,33 @@
     place-content: center;
     & > :global(*) {
       width: 100%;
-      // margin: 0 30px;
     }
 
     @include bp(lg, down) {
-      flex-wrap: wrap;
-      & > :global(*) {
-        margin-top: 30px;
-      }
+      display: none;
     }
   }
 
   .buttons {
     display: flex;
     margin-top: sp(4.6);
+    // TODO: test column gap on iOS Safari
     column-gap: sp(2.5);
+    
+    @include bp(lg, down) {
+      justify-content: center;
+      column-gap: sp(2);
+      margin-top: sp(3);
+    }
+    @include bp(350px, down) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: sp(2.5);
+      & > :global(*) {
+        display: block;
+        width: 80%;
+      }
+    }
   }
 
   .background-img {
@@ -287,22 +315,38 @@
     background-color: $kelp-dark;
     color: $paper;
     margin-bottom: 0;
-    p {
-      font-family: $font-family-monospace;
+
+    h2 {
+      font-family: $display-font-family;
+      font-weight: 400;
+      font-size: sp(4.8);
+      letter-spacing: $display-letter-spacing;
+      @include bp(md, down) {
+        font-size: minmax(320px, md, 24px, 48px);
+      }
+    }
+    a {
+      text-decoration: none;
     }
   }
   .why-planter {
-    // background-color: $kelp-dark;
-    background-color: #232323;
-    color: white;
-    text-align: left;
-    padding: sp(12);
+    position: relative;
     margin-top: 0;
     margin-bottom: 0;
-    position: relative;
+    text-align: left;
+    background-color: #232323;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    padding: sp(8.5);
     @include bp(lg, down) {
-      padding: sp(3);
+      padding: sp(4) sp(3);
     }
+    @include bp(md, down) {
+      padding: sp(3) sp(2);
+    }
+
     .why-planter-bg {
       height: 100%;
       pointer-events: none;
@@ -310,11 +354,14 @@
         mix-blend-mode: overlay;
         opacity: 0.3;
         height: 100%;
-        max-width: 100%;
+        // max-width: 100%;
+        object-fit: cover;
+        width: 100%;
       }
     }
     .inner {
       width: 70%;
+      max-width: $page-max-width;
       @include bp(lg, down) {
         width: 100%;
       }
@@ -322,45 +369,16 @@
     p {
       margin-top: sp(5);
       margin-bottom: 0;
+      @include bp(lg, down) {
+        margin-top: sp(3);
+      }
       span {
         font-weight: 700;
       }
     }
+    ul {
+      margin: sp(2) 0 0;
+      padding-left: sp(3);
+    }
   }
-  
-  // .ditto-codes {
-  //   margin-top: 0;
-  //   margin-bottom: 0;
-  //   background-color: #232323;
-  //   color: white;
-  //   padding: sp(12);
-  //   text-align: left;
-  //   position: relative;
-  //   overflow: hidden;
-  //   @include bp(lg, down) {
-  //     padding: sp(3);
-  //   }
-  //   h2 {
-  //     font-size: sp(14.2);
-  //   }
-  //   p {
-  //     margin-right: sp(3);
-  //     width: calc(50% - sp(3));
-  //     @include bp(lg, down) {
-  //       width: 100%;
-  //       margin-bottom: sp(3);
-  //       margin-right: 0;
-  //     }
-  //   }
-  //   .copy {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //   }
-  //   .ditto-codes-bg {
-  //     img {
-  //       opacity: .5;
-  //       mix-blend-mode: overlay;
-  //     }
-  //   }
-  // }
 </style>

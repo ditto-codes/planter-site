@@ -7,6 +7,7 @@
 */
 
 @use "sass:list";
+@use "sass:math";
 
 // SPACING
 // ────────────────────────────────────
@@ -63,3 +64,37 @@
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
   @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 } 
+
+@function unitless($number) {
+  @return math.div($number, ($number * 0 + 1));
+}
+
+// only accepts pixels for min max font size
+@function minmax($minBreakpoint, $maxBreakpoint, $minValuePx, $maxValuePx) {
+  $minWidth: '';
+  $maxWidth: '';
+  $minValuePx: unitless($minValuePx); 
+  $maxValuePx: unitless($maxValuePx); 
+
+  // Check if the supplied min breakpoint exists in our breakpoints map
+  @if map-has-key($breakpoints, $minBreakpoint) {
+    $minWidth: unitless(map-get($breakpoints, $minBreakpoint));
+  }
+  // Value is not a defined breakpoint, but use it directly
+  @else {
+    $minWidth: unitless($minBreakpoint);
+  }
+  // Check if the supplied max breakpoint exists in our breakpoints map
+  @if map-has-key($breakpoints, $maxBreakpoint) {
+    $maxWidth: unitless(map-get($breakpoints, $maxBreakpoint));
+  }
+  // Value is not a defined breakpoint, but use it directly
+  @else {
+    $maxWidth: unitless($maxBreakpoint);
+  }
+
+  $slope: math.div($maxValuePx - $minValuePx, $maxWidth - $minWidth);
+  $yAxisIntersection: $minValuePx - $minWidth * $slope;
+
+  @return unquote("clamp(#{$minValuePx}px, calc(#{$yAxisIntersection}px + #{$slope} * 100vw), #{$maxValuePx}px)");
+}
