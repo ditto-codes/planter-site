@@ -36,7 +36,7 @@
   </button>
 
   {#if open}
-    <nav transition:slide={{ duration: 300, easing: quintOut}}>
+    <nav transition:slide|global={{ duration: 300, easing: quintOut}}>
       <ul>
         {#each links as link}
           <li>

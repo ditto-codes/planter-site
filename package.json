@@ -12,19 +12,20 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^1.0.0",
-    "@sveltejs/kit": "^1.0.0",
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "autoprefixer": "^10.4.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.2.1",
+    "eslint-plugin-svelte3": "^4.0.0",
     "mdsvex": "^0.10.6",
     "prettier": "^2.4.1",
-    "prettier-plugin-svelte": "^2.4.0",
+    "prettier-plugin-svelte": "^2.10.1",
     "sass": "^1.43.4",
     "shiki": "^0.14.2",
-    "svelte": "^3.47.0",
-    "svelte-preprocess": "^4.9.8"
+    "svelte": "^4.0.0",
+    "svelte-preprocess": "^5.0.3"
   },
   "dependencies": {
     "feather-icons": "^4.28.0",
