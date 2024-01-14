@@ -6,11 +6,11 @@ Planter Basic is a web project starter that uses [`Vite`](https://vitejs.dev/) a
 
 ## Install
 <!-- TODO: update for planter cli -->
-With [`degit`](https://github.com/Rich-Harris/degit):
+With [planter-cli](/docs/getting-started):
 ```shell
-> degit matthew-ia/planter-basic
+> npx @planter/cli create ditto-codes/planter-basic my-project
 ```
-Or clone [from GitHub](https://github.com/matthew-ia/planter-basic).
+Or clone [from GitHub](https://github.com/ditto-codes/planter-basic).
 
 ## Run Scripts
 Run `npm run dev` or `npm start` to start the development server.
