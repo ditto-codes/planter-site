@@ -23,8 +23,8 @@
 <style lang="scss">
   .heading {
     // TODO: make this right
-    font-family: 'Quincy CF';
-    font-weight: 800;
+    font-family: $display-font-family;
+    font-weight: $display-font-weight;
     line-height: 1.2;
   }
   h1 {

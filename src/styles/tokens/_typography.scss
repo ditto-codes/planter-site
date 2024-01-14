@@ -21,9 +21,11 @@
 // FONTS
 // ────────────────────────────────────
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,500;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@400;500;700&family=Lora:wght@500;700&display=swap');
+@import url("https://use.typekit.net/rkk1ycf.css");
 $font-chivo: 'Chivo';
 $font-lora: 'Lora';
 $font-ibm-plex-mono: 'IBM Plex Mono';
+$font-quincy: 'quincy-cf';
 
 // BASE 
 // ────────────────────────────────────
@@ -34,6 +36,7 @@ $font-family-sans-serif:      $font-chivo, system-ui, -apple-system, "Segoe UI",
 $font-family-serif:           $font-lora, Georgia, serif, !default;
 $font-family-monospace:       $font-ibm-plex-mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
+$font-family-serif-display:   $font-quincy, $font-lora, Georgia, serif, !default;
 
 // FONT SIZE
 $font-size-root:              10px !default; // Doesn't set a value unless you override it
@@ -74,7 +77,7 @@ $h4-font-size:                1.8rem !default;
 $h5-font-size:                1.6rem !default;
 $h6-font-size:                1.4rem !default;
 
-$display-font-family:         $font-family-serif;
+$display-font-family:         $font-family-serif-display;
 $display-font-size:           7.2rem;
 $display-font-weight:         700;
 $display-color:               $black;

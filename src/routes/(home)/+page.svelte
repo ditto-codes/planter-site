@@ -43,7 +43,7 @@
 </section>
 <div class="spacer" />
 <section>
-  <h2>Create</h2>
+  <h2>Create.</h2>
   <div class="description">
     <p>Clone your saved planter with no git history.</p>
   </div>
@@ -156,7 +156,7 @@
     }
   }
   p, li {
-    font-family: $display-font-family;
+    font-family: $font-family-serif;
     font-weight: 500;
     font-size: sp(2.2);
     margin-bottom: sp(.5);
@@ -318,7 +318,7 @@
 
     h2 {
       font-family: $display-font-family;
-      font-weight: 400;
+      font-weight: $display-font-weight;
       font-size: sp(4.8);
       letter-spacing: $display-letter-spacing;
       @include bp(md, down) {

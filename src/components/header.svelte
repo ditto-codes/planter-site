@@ -31,7 +31,7 @@
   .title {
     margin: 0;
     // TODO: make this right
-    font-family: 'Quincy CF';
+    font-family: $display-font-family;
     font-weight: 800;
     font-size: 4.0rem;
     line-height: 1.2;
