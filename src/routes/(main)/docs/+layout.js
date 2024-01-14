@@ -6,7 +6,6 @@ export async function load({ params, url }) {
 
   const data = {
     '/docs': {
-      topic: 'Planter CLI',
       repo: {
         name: 'planter',
         url: 'https://github.com/ditto-codes/planter',
@@ -35,7 +34,6 @@ export async function load({ params, url }) {
       ]
     },
     '/docs/basic': {
-      topic: 'Planter Basic',
       repo: {
         name: 'planter-basic',
         url: 'https://github.com/ditto-codes/planter-basic',
@@ -56,7 +54,6 @@ export async function load({ params, url }) {
       ]
     },
     '/docs/svelte': {
-      topic: 'Planter Svelte',
       repo: {
         name: 'planter-svelte',
         url: 'https://github.com/ditto-codes/planter-svelte',

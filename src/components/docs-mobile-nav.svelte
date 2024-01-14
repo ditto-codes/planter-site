@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
   import { slide } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
-  import { onMount } from 'svelte'
+  import { onDestroy, onMount } from 'svelte'
 
   import Icon from '$components/icon.svelte'
   $: ({ nav: links } = $page.data);
@@ -15,11 +15,14 @@
   const toggle = () => {open = !open};
   let mobileNavElement;
 
+  function clickOutside(e) {
+    const isOutside = !mobileNavElement.contains(e.target);
+    if (isOutside && open) toggle();
+  }
+
   onMount(() => {
-    document.addEventListener('click', e => {
-      const clickOutside = !mobileNavElement.contains(e.target);
-      if (clickOutside && open) toggle();
-    })
+    document.addEventListener('click', clickOutside);
+    return () => document.removeEventListener('click', clickOutside);
   });
 
 </script>

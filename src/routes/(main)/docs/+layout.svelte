@@ -5,7 +5,7 @@
   import DocsNav from '$components/docs-nav.svelte'
   import Footer from '$components/footer.svelte';
   import { page } from '$app/stores';
-  $: ({ title, topic, repo, nav } = $page.data);
+  $: ({ title, repo, nav } = $page.data);
 </script>
 
 <DocsMobileNav />
@@ -18,7 +18,7 @@
   </div>
   <div class="center-col">
     <div class="header">
-      <Header slot="header" {title} {topic} {repo} />
+      <Header slot="header" {title} {repo} />
     </div>
     <div class="content">
       <slot/>
