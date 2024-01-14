@@ -336,8 +336,6 @@
     text-align: left;
     background-color: #232323;
     color: white;
-    display: flex;
-    justify-content: center;
     
     padding: sp(8.5);
     @include bp(lg, down) {
@@ -360,8 +358,8 @@
       }
     }
     .inner {
-      width: 70%;
       max-width: $page-max-width;
+      margin: 0 auto;
       @include bp(lg, down) {
         width: 100%;
       }
