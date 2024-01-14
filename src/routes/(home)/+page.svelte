@@ -2,7 +2,8 @@
   import IntersectionObserver from 'svelte-intersection-observer';
   import Button from '$components/button.svelte';
   import Code from '$components/code.svelte';
-  import List from '$components/list/index.js';
+  import List from '$components/list/list.svelte';
+  import ListItem from '$components/list/item.svelte';
   import Hero from '$components/hero.svelte';
   import Footer from '$components/footer.svelte';
 
@@ -30,11 +31,11 @@
     <div class="graphic-group library" bind:this={animationNodeLibrary}>
       <List title="My Library">
         {#if intersecting}
-          <List.Item key={0}>my-planter</List.Item>
-          <List.Item key={1}>vite-starter</List.Item>
-          <List.Item key={2}>basic</List.Item>
-          <List.Item key={3}>svelte</List.Item>
-          <List.Item key={4}>cowboy-stuff</List.Item>
+          <ListItem key={0}>my-planter</ListItem>
+          <ListItem key={1}>vite-starter</ListItem>
+          <ListItem key={2}>basic</ListItem>
+          <ListItem key={3}>svelte</ListItem>
+          <ListItem key={4}>cowboy-stuff</ListItem>
         {/if}
       </List>
     </div>
@@ -55,11 +56,11 @@
     <div class="graphic-group create-libraries" bind:this={animationNodeCreate} class:animate={intersecting}>
       <div class="animation-container lib">
         <List title="My Library">
-          <List.Item>my-planter</List.Item>
-          <List.Item>vite-starter</List.Item>
-          <List.Item>basic</List.Item>
-          <List.Item>svelte</List.Item>
-          <List.Item>cowboy-stuff</List.Item>
+          <ListItem>my-planter</ListItem>
+          <ListItem>vite-starter</ListItem>
+          <ListItem>basic</ListItem>
+          <ListItem>svelte</ListItem>
+          <ListItem>cowboy-stuff</ListItem>
         </List>
         <div class="animation-spacer"/>
       </div>
@@ -67,17 +68,17 @@
         <div class="animation-spacer">
           <!-- Placeholder for size -->
           <List title="My Library">
-            <List.Item>my-planter</List.Item>
-            <List.Item>vite-starter</List.Item>
-            <List.Item>basic</List.Item>
-            <List.Item>svelte</List.Item>
-            <List.Item>cowboy-stuff</List.Item>
+            <ListItem>my-planter</ListItem>
+            <ListItem>vite-starter</ListItem>
+            <ListItem>basic</ListItem>
+            <ListItem>svelte</ListItem>
+            <ListItem>cowboy-stuff</ListItem>
           </List>
         </div>
         <List title="./my-dir">
-          <List.Item type="fill">
+          <ListItem type="fill">
             my-planter
-          </List.Item>
+          </ListItem>
         </List>
       </div>
     </div>
