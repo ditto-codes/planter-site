@@ -1,5 +1,5 @@
 <script>
-import { page } from '$app/stores';
+  import { page } from '$app/stores';
 
   let url;
   $: url = $page.url.pathname;
@@ -99,6 +99,10 @@ import { page } from '$app/stores';
       font-size: 1.5rem;      
       padding: .5rem;
     }
+  }
+
+  a.logo:hover {
+    background-color: transparent;
   }
   
   .current {
