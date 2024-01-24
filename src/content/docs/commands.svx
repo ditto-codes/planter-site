@@ -129,7 +129,7 @@ planter list
 
 `planter edit <name> [options]`
 
-Description
+Edit or delete an existing planter.
 
 **Args**
 
