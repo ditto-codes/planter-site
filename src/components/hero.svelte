@@ -4,7 +4,7 @@
 
 <div class="hero">
   <div class="col left">
-    <img class="planter-logo" src="temp-logotype.png" alt="logo" />
+    <img class="planter-logo" src="planter-logotype.svg" alt="Planter." />
     <div class="copy">
       <p>Planter is a CLI for starting projects from a personal library of starters or from an existing repo. Start your next project using Planter.</p>
       <div class="buttons">
@@ -60,6 +60,11 @@
 
   .planter-logo {
     max-width: 700px;
+    padding: sp(1) 0;
+    margin-bottom: sp(3);
+    @include bp(lg, down) {
+      margin-bottom: sp(1);
+    }
   }
 
   .planter-graphic {
