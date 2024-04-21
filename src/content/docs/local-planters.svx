@@ -1,0 +1,27 @@
+---
+title: 'Local Planters'
+---
+
+Local planters enable folks to quickly use Planter without needing a remote repo or even a git repository at all. This flexibility enables planter to be used for unpublished code such as a frequently used code sandbox or works in progress.
+
+Keep in mind, if your local planter is a repo it will always plant the current branch. (Local planters are tied to the directory, not the branch/repo.)
+
+**Example**
+
+```
+my-project/
+├─ src/
+│   ├─ script.js
+│   ├─ style.css
+│   └─ index.html
+└─ .planterignore
+```
+
+Add a local planter with the `add` command using the [local option](/docs/commands#add) (`--local`).
+
+
+## Ignore Files
+
+When using local repos Planter will respect ignore files. Planter supports `.gitignore` and/or `.planterignore`. `.planterignore` works the same way as a `.gitignore` file does with git. If both files exist, Planter will default to the `.planterignore`. 
+
+This means you could tell Planter to ignore unique files in `.planterignore`, while git still utilizes the `.gitignore` file. Alternatively, if you want to ignore the same set of files for both, you can just retain a `.gitignore`.

@@ -84,9 +84,9 @@ The repo URL or name.
 
 Treat the location as a “local repo” instead of a remote repo.
 
-By using the local option planter allows the location to be a local folder rather than a remote repo. When running `create` with a local planter, the .gitignore or .planterignore will be respected.
+By using the local option, planter allows the location to be a local folder rather than a remote repo. When running `create` with a local planter, the `.gitignore` or `.planterignore` will be respected.
 
-Read more about Local repos.
+Read more about [Local Planters](/docs/local-planters).
 
 **Examples**
 

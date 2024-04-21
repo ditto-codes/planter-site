@@ -20,12 +20,8 @@ export async function load({ params, url }) {
           url: '/docs/commands' 
         },
         { 
-          title: 'Local Repos', 
-          url: '/docs/local-repos' 
-        },
-        { 
-          title: 'Ignore Files', 
-          url: '/docs/ignore-files' 
+          title: 'Local Planters', 
+          url: '/docs/local-planters' 
         },
         { 
           title: 'About', 
