@@ -6,7 +6,7 @@
   <div class="col left">
     <img class="planter-logo" src="temp-logotype.png" alt="logo" />
     <div class="copy">
-      <p>Planter is a tool for starting projects from a personal library of starters or from an existing repo. Start your next project using Planter.</p>
+      <p>Planter is a CLI for starting projects from a personal library of starters or from an existing repo. Start your next project using Planter.</p>
       <div class="buttons">
         <Button href="/docs/getting-started">Get Started</Button>
         <Button href="/garden" variant="ghost">The Garden</Button>
